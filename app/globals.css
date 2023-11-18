@@ -105,3 +105,9 @@ a {
     color-scheme: dark;
   }
 }
+
+.linha{
+  background-color: #333334;
+  width: 100%;
+  height: 1px;
+}
