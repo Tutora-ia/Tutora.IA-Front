@@ -1,7 +1,9 @@
-import { exo } from './fonts.js'
+"use client"
+
+import { exo } from '../fonts.js'
 import Image from 'next/image.js'
 import Link from 'next/link.js'
-import styles from './style.components/header.css'
+import styles from './header.css'
 
 export default function Header() {
     return (

@@ -1,0 +1,41 @@
+.sideNavBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #371970;
+    width: 6%;
+    height: 95vh;
+    margin-top: 2.5vh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #000;
+    max-width: 100%;
+}
+
+.cima{
+    display: flex;
+    gap: 6vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.navIcon {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

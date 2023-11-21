@@ -1,8 +1,6 @@
-import styles from './globals.css';
-import { exo } from './components/fonts';
-import Header from './components/header.jsx';
-import Footer from './components/footer.jsx';
-
+import styles from '../globals.css';
+import Header from '../components/header.component/header.jsx';
+import Footer from '../components/footer.component/footer.jsx';
 
 export const metadata = {
   title: 'Tutora.IA',
@@ -12,9 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body className={exo.className}>
+      <body>
         <Header /> 
-        {children}
+          {children}
         <Footer />
       </body>
     </html>

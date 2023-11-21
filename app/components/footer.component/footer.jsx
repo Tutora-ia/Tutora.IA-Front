@@ -1,7 +1,7 @@
-import { poppins } from './fonts.js'
+import { poppins } from '../fonts.js'
 import Image from 'next/image.js'
 import Link from 'next/link.js'
-import styles from './style.components/footer.css'
+import styles from './footer.css'
 
 export default function Footer() {
     return (
