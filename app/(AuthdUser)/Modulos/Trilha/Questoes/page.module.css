@@ -1,0 +1,179 @@
+.mainQuestions {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #1E0E3B;
+  
+}
+
+.containerMap{
+  height: 560px;
+  width: 85%;
+  background: #262746;
+  border-radius: 20px;
+  margin-left: 8%;
+  margin-top: 2%;
+  display: inline-block ;
+  }
+  
+  .containerQuestions{
+    display: flex;
+    background-color: #ffffff;
+    height: 8.5%;
+    width: 70%;
+    border-radius: 11px;
+    text-align: center; 
+    margin-left:8%;
+    bottom: -30px;
+    display: inline-block ;
+    position: relative;
+  }
+  
+  .containerQuestions h1{
+    color: black;
+    margin-top: 6px;
+    font-family: 'Exo 2', sans-serif;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .arrowBack{
+    display: flex;
+    left: -70px;
+    position: absolute;
+    top: 5px;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+  }
+
+  .level{
+    margin-top: -315px;
+    position: absolute;
+    left: 62.1vw;
+  }
+  
+  .level h4{
+    left: 5.7vw;
+    position: relative;
+    margin-top: -60px;
+    color: #ffffff;
+    font-size: 1vw;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .level h5{
+    position: relative;
+    margin-top: -7px;
+    color: #ffffff;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .level p{
+  width: 100px;
+  background: #373737;
+  margin-left: 70px; 
+  position: absolute;
+  border-radius: 0px 20px 20px 0px;
+  color: #ffffff;
+  bottom: 4px;
+  }
+
+  .question{
+    display: flex;
+    font-family: 'Exo 2' sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  .question h3{
+    position: relative;
+    top: 50px;
+  }
+  
+  .question p{
+    position: relative;
+    top: 55px;
+    padding-left: 10px;
+  }
+  
+.alternatives{
+  display: grid;
+  grid-template-columns: 400px 400px;
+}
+
+  .responseOne, 
+  .responseTwo, 
+  .responseThree, 
+  .responseFour{
+    width: 350px;
+    height: 80px;
+    position: relative;
+    top: 120px;
+    font-family: 'Poppins' sans-serif;
+    color: #000;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffffff;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+  }
+
+  .responseBar{
+    top: 450px;
+    position: absolute;
+    background: #111118;
+    border-radius: 10px;
+    width: 100%;
+    padding: 8px;
+  }
+  
+  .containerInput button{
+    border: none;
+    background: transparent;
+    margin: 0px 10px 15px 10px;
+    cursor: pointer;
+  }
+
+  .containerInput input{
+    padding: 10px;
+    border: none;
+    color: #fff;
+    font-family: 'Poppins' sans-serif;
+    background: transparent;
+    border-left: 1px solid #fff;
+    width: 85%;
+  }
+
+  .containerInput input::placeholder{
+    font-size: 18px;
+    font-family: 'Poppins' sans-serif;
+  }
+
+  .containerInput .buttonToSend{
+    position: absolute;
+    right: 10px;
+    top: 12px;
+  }
+
+  .containerInput .buttonToTalk{
+    position: absolute;
+    left: 18px;
+    top: 10px;
+    padding: 2px;
+  }
+
+  .btnnext{
+    position: absolute;
+    right: -200px;
+    bottom: -450px;
+    padding: 10px 20px;
+    border: none;
+    background: #4B2395;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+  }

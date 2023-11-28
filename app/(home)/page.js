@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
+import { exo, poppins } from '@/app/components/fonts.js'
+
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -8,14 +10,20 @@ export default function Home() {
         <div className={styles.navBar}>
           <div className={styles.mask}>
             {/* tittle, sub tittle and description */}
-            <h1 className={styles.title}>
-              TUTORA.IA
-            </h1>
-            <h2 className={styles.subTitle}>SUA ESCRITA, NOSSA MISSÃO: EXCELÊNCIA EM COMUNICAÇÃO</h2>
-            <p className={styles.description}>
-              Colocando um ponto final nos seus <br></br>
-              questionamentos da Língua Portuguesa.
-            </p>
+            <div className='logoDescription'>
+              <p className={`${styles.description}`}>
+                <Image
+                  className={`${styles.logo}`}
+                  src={'/logo.png'}
+                  width={400}
+                  height={110}
+                  alt='Logo'
+                />
+                <br />
+                Colocando um ponto final nos seus <br></br>
+                questionamentos da Língua Portuguesa.
+              </p>
+            </div>
 
             {/* image aurora */}
             <div className={styles.aurora}>
@@ -28,9 +36,9 @@ export default function Home() {
             {/* buttons register and login */}
             <div className={styles.btn}>
 
-              <button type='button' className={styles.btnStyle}>
+              <button type='button' className= {styles.btnStyle}>
                 <Link href="/">
-                  <h2>CADASTRAR</h2>
+                  <h2 className={exo.className}>CADASTRAR</h2>
                 </Link>
               </button>
 
@@ -38,7 +46,7 @@ export default function Home() {
 
               <button type='button' className={`${styles.btnStyle} ${styles.btn2}`}>
                 <Link href="/">
-                  <h2>LOGIN</h2>
+                  <h2 className={exo.className}>LOGIN</h2>
                 </Link>
               </button>
 
@@ -47,7 +55,7 @@ export default function Home() {
         </div> {/* end navbar  */}
       </div> {/* end container */}
 
-      <div className={styles.containerTwo}>
+      <div className={`${styles.containerTwo} `}>
         {/* content two */}
         <h1>Gamificando seu <br></br>
           aprendizado</h1>
@@ -98,36 +106,36 @@ export default function Home() {
             </div>
 
             <div>
-              <Image 
-              className={`${styles.icon} ${styles.chat}`}
-              src="chat.svg" 
-              width={200} 
-              height={200}
-              alt='icone chat'
+              <Image
+                className={`${styles.icon} ${styles.chat}`}
+                src="chat.svg"
+                width={200}
+                height={200}
+                alt='icone chat'
               />
               <h2>Lições com a <br></br>
                 Aurora</h2>
             </div>
 
             <div>
-              <Image 
-              className={`${styles.icon} ${styles.correct}`}
-              src="correct.svg" 
-              width={200} 
-              height={200}
-              alt='icone correct'
+              <Image
+                className={`${styles.icon} ${styles.correct}`}
+                src="correct.svg"
+                width={200}
+                height={200}
+                alt='icone correct'
               />
               <h2>Correção de <br></br>
                 Redações</h2>
             </div>
 
             <div>
-              <Image 
-              className={`${styles.icon} ${styles.right}`}
-              src="right.svg" 
-              width={200} 
-              height={200}
-              alt='right icon'
+              <Image
+                className={`${styles.icon} ${styles.right}`}
+                src="right.svg"
+                width={200}
+                height={200}
+                alt='right icon'
               />
               <h2>Aprendizado de<br></br>
                 Qualidade!</h2>
@@ -142,12 +150,12 @@ export default function Home() {
         <h1>NOSSOS DIFERENCIAIS</h1>
 
         <section>
-          <Image 
-          className={`${styles.diferent} ${styles.ia}`}
-          src="IA.svg" 
-          width={350} 
-          height={350}
-          alt='IA icon'
+          <Image
+            className={`${styles.diferent} ${styles.ia}`}
+            src="IA.svg"
+            width={350}
+            height={350}
+            alt='IA icon'
           />
           <div className={styles.intelegence}>
             <h2>Inteligência Artificial</h2>
@@ -179,12 +187,12 @@ export default function Home() {
             </p>
           </div>  {/*end div apprenticeship */}
 
-          <Image 
-          className={`${styles.diferent} ${styles.learning}`}
-          src="learning.svg" 
-          width={400} 
-          height={400}
-          alt='learning icon'
+          <Image
+            className={`${styles.diferent} ${styles.learning}`}
+            src="learning.svg"
+            width={400}
+            height={400}
+            alt='learning icon'
           />
 
         </section> {/* end section */}
@@ -193,7 +201,7 @@ export default function Home() {
       <div className={styles.containerFour}>
         <h1>PLANOS</h1>
 
-        <h2>
+        <h2 className={exo.className}>
           Faça um upgrade no seu aprendizado! Escolha seu <br></br>
           plano ideal para um futuro mais que perfeito.
         </h2>

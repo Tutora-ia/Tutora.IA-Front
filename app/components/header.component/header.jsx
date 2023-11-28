@@ -22,18 +22,18 @@ export default function Header() {
                     <nav>
                         <ul>
                             <li><Link className="navBarLink" href="/">Home</Link></li>
-                            <li><Link className="navBarLink" href="/">Sobre</Link></li>
-                            <li><Link className="navBarLink" href="/">Planos</Link></li>
-                            <li><Link className="navBarLink" href="/">Suporte</Link></li>
+                            <li><Link className="navBarLink" href="/sobre">Sobre</Link></li>
+                            {/* <li><Link className="navBarLink" href="/">Planos</Link></li> */}
+                            <li><Link className="navBarLink" href="/suporte">Suporte</Link></li>
                         </ul>
                     </nav>
                 </div>
                 <div className="containerDireita">
                     <div className="btnEntrar">
-                        <Link className="btnTexto" href="/">Entrar</Link>
+                        <Link className="btnTexto" href="/Login">Entrar</Link>
                     </div>
                     <div className="btnCadastrar">
-                        <Link className="btnTexto" href="/">Cadastre-se</Link>
+                        <Link className="btnTexto" href="/Cadastro">Cadastre-se</Link>
                     </div>
                 </div>
             </header>

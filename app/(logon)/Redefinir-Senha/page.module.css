@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?família=Poppins:wght@300; 400; 500; 600; 700; 800; 900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+/* background com fundo redondo  */
+.backgroundLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    background: #000;
+    height: 100vh; /* Defina a altura conforme necessário */
+    overflow: hidden;
+}
+
+.backgroundLogin::after {
+    content: "";
+    position: absolute;
+    background-color: #4B2395;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    filter: blur(120px);
+}
+
+.backgroundLogin::before {
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.backgroundLogin::after {
+    bottom: 0;
+    right: 0;
+}
+
+.circle{
+    position: absolute;
+    background-color: #4B2395;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    filter: blur(120px); 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper{
+    margin-left: 20%;
+    width: 34%;
+    background: rgba(217, 217, 217, 0.10);
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, .2); */
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin-right: auto;
+}
+
+ .wrapper h1{
+    color: #6C33D7;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.wrapper p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.icon{
+    margin-left: 50%;
+    margin-bottom: 10%;
+}
+
+.senha{
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.wrapper .inputbox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    
+}
+
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+
+}
+
+.inputbox input::placeholder {
+    color: #fff;
+}
+
+.inputbox i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .rememberforgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;  
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.rememberforgot a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.rememberforgot a:hover{
+    text-decoration: underline;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form p{
+    position: relative;
+}
+
+.wrapper .btn{
+    width: 80%;
+    height: 3rem;
+    background: #6C33D7;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper .btn:hover{
+    background-color: #4B2395;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.textright{
+    width: 28.6875rem;
+    margin-right: 10%;
+}
+
+.textright h2{
+    color: #FFF;
+    text-align: center;
+    font-family: Exo 2;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.textright h3{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 3rem;
+
+}
+
+/* .textright h3{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 3rem;
+} */
+
+.botao{
+    width: 10rem;
+    height: 2rem;
+    flex-shrink: 0;
+    border-radius: 0.40rem;
+    border: 1px solid #DDD;
+    background: transparent;
+    margin-top: 1rem;
+    color: #6C33D7;
+    font-weight: 800;
+    font-size: 1rem;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.botao:hover{
+    background-color: #6C33D7;
+    color: #000;
+    cursor: pointer;
+    border: none;
+}

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700;800&family=Poppins:wght@200;700&display=swap');
+
+.mainTrail {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #241F43;  
+  ;
+}
+
+.containerTrail{
+  background: #241F43;  
+  display: inline-block;
+  margin-right: 0px;
+}
+
+.containerAurora{
+  height: 420px;
+  width: 1198px;
+  background: #1E0E3B;
+  border-radius: 20px;
+  margin: 25px 79px;
+  border: 13px solid #4B2395;
+}
+
+.maskTrail{
+  height: 480PX;
+  background-color: #262746;
+  background-size: cover;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+.containerCompleted{
+  display: flex;
+}
+
+.arrowBack{
+  padding: 25px;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+}
+
+.containerCompleted h1{
+  height: 9.5%;
+  width: 70%;
+  color: #fff;
+  background: #A3218E;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px;
+}
+
+.level{
+  margin-left: 270px;
+  position: absolute;
+  left: 62.1vw;
+  margin-top: 10px;
+}
+
+.level h4{
+  left: 5.7vw;
+  position: relative;
+  margin-top: -60px;
+  color: #ffffff;
+  font-size: 1vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+.level h5{
+  position: relative;
+  margin-top: -12px;
+  color: #ffffff;
+  font-size: 26px;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 40px;
+}
+
+.level p{
+width: 100px;
+background: #373737;
+margin-left: 70px; 
+position: absolute;
+border-radius: 0px 20px 20px 0px;
+color: #ffffff;
+bottom: 10px;
+text-align: center;
+}
+
+.btnnext{
+  position: absolute;
+  right: 90px;
+  padding: 10px 30px;
+  border: none;
+  background: #4B2395;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.containerAurora h2{
+ font-size: 50px;
+ text-align: center;
+ width: 50%;
+ margin-left: 40%;
+ margin-top: 10%;
+ font-family: 'Exo 2' sans-serif;
+ color: #fff;
+}
+
+.containerAurora span{
+  color: #4B2395;
+}
+
+.aurora{
+  position: absolute;
+  margin-top: -460px;
+  margin-left: 100px;
+}
