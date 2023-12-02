@@ -13,7 +13,7 @@ export default function Footer() {
                     <ul>
                         <li><Link className="Links" href="/">Home </Link></li>
                         <li><Link className="Links" href="/">Sobre</Link></li>
-                        <li><Link className="Links" href="/">Alguma Coisa</Link></li>
+                        <li><Link className="Links" href="/">Planos</Link></li>
                         <li><Link className="Links" href="/">Suporte</Link></li>
                     </ul>
                 </div>

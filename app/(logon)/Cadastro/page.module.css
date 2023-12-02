@@ -182,7 +182,7 @@
 .textright h1{
     color: #FFF;
     text-align: center;
-    font-family: Exo 2;
+    font-family: 'Exo 2', sans-serif;
     font-size: 2.25rem;
     font-style: normal;
     font-weight: 700;
@@ -192,7 +192,7 @@
 .textright h2{
     color: #FFF;
     text-align: center;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
@@ -204,7 +204,7 @@
 .textright h3{
     color: #FFF;
     text-align: center;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;

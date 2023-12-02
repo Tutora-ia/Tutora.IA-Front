@@ -3,17 +3,17 @@ import Link from 'next/link'
 import styles from './page.module.css'
 import GoogleIcon from '../assets/google.svg'
 
-
 export default function Home() {
 
     return (
         <div className={styles.backgroundLogin}>
 
             <div className={styles.wrapper}>
+                
                 <div className={styles.circle}></div>
                 <form className={styles.form} action="">
                     <h1>Login</h1>
-
+                    <backButton />
                     <div className={styles.icon}>
                         <Image
                             className=''
