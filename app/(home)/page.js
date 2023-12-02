@@ -9,7 +9,7 @@ export default function Home() {
       <div className={styles.container}> {/* the container fill a section */}
         <div className={styles.navBar}>
           <div className={styles.mask}>
-            {/* tittle, sub tittle and description */}
+          
             <div className='logoDescription'>
               <p className={`${styles.description}`}>
                 <Image
