@@ -2,13 +2,16 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
 import GoogleIcon from '../assets/google.svg'
+import ArrowBackButton from '@/app/components/arrowBackButton.component/arrowBackButton'
 
 
 export default function Cadastro() {
 
     return (
         <div className={styles.backgroundLogin}>
-
+            <div className={styles.ArrowBackButton}>
+            <ArrowBackButton/>
+            </div>
             <div className={styles.textTop}>
                 <h1>Seja bem-vindo!</h1>
                 <h2>Preparado para dar um play na sua<br />evolução gramatical?</h2>

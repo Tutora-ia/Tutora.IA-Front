@@ -35,6 +35,12 @@
     right: 0;
 }
 
+.ArrowBackButton{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
 .circle{
     position: absolute;
     background-color: #4B2395;
@@ -271,6 +277,9 @@
 }
 
 @media screen and (max-width: 910px){
+    .ArrowBackButton{
+        display: none;
+    }
     .wrapper .rememberforgot {
         font-size: 12px;
     }

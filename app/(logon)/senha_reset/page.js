@@ -2,11 +2,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
 import GoogleIcon from '../assets/google.svg'
+import ArrowBackButton from '@/app/components/arrowBackButton.component/arrowBackButton'
 
 
 export default function SenhaReset() {
     return (
         <div className={styles.backgroundLogin}>
+            <div className={styles.ArrowBackButton}>
+                <ArrowBackButton/>
+            </div>
             <div className={styles.textTop}>
                 <h2>Olá, pupil♡!</h2>
                 <h3>Fique tranquilo, pois vamos te<br />ajudar, Informe os dados<br /> necessários para redefinir a
@@ -38,7 +42,6 @@ export default function SenhaReset() {
                 <h3>Fique tranquilo, pois vamos te<br />ajudar, Informe os dados<br /> necessários para redefinir a
                     sua<br />senha.
                 </h3>
-
             </div>
         </div>
     )
