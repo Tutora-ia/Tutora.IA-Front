@@ -1,0 +1,17 @@
+*{
+    color: #fff;
+}
+
+.arrowBackButton {
+    width: 2vw;
+    height: 2vw;
+
+}
+
+.arrowBackButtonDiv{
+    cursor: pointer;
+    text-decoration: none
+}
+
+
+

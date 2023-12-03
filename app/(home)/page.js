@@ -3,6 +3,8 @@ import Link from 'next/link'
 import styles from './page.module.css'
 import { exo, poppins } from '@/app/components/fonts.js'
 
+
+
 export default function Home() {
   return (
     <main className={styles.main}>

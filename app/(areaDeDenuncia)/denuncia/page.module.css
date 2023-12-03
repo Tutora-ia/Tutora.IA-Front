@@ -1,0 +1,291 @@
+/* Estilos Globais, se necessário */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+
+/* BACKGROUND */
+.backgroundAreaDeDenuncia {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #ffffff0f;
+    color: #fff;
+    padding: 5vw;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.circle,
+.circle2 {
+    position: absolute;
+    background-color: #4B2395;
+    border-radius: 50%;
+    filter: blur(200px);
+    z-index: -1;
+}
+
+.circle {
+    width: 25vw;
+    height: 25vw;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.circle2 {
+    width: 15vw;
+    height: 15vw;
+    bottom: 0%;
+    right: 0%;
+}
+
+/* Botão de Voltar */
+.arrow {
+    position: absolute;
+    top: 3vw;
+    left: 3vw;
+}
+
+/* Main */
+.main {
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+    margin-top: 2vh;
+}
+
+
+.leftMain, .rightMain{
+    gap: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1%;
+}
+
+.leftMain{
+    height: ma0vh;
+}
+/* Left */
+
+.logo{
+    width: 25vw;
+}
+
+.lacoRoxo {
+    padding-top: 1vw;
+    margin-left: 40px;
+    width: 4.8vw;
+}
+
+.aurora{
+    height: 60vh;
+}
+
+/* Right*/
+
+.center {
+    padding: 3% 5% 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    padding: 0;
+    margin: 0;
+    font-size: 3.5vw;
+    font-family: 'Exo 2', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* Images */
+
+.centerImages {
+    display: flex;
+    gap: 3vh;
+}
+
+.hands {
+    width: 10vw;
+}
+
+/* Contacts */
+
+.contacts {
+    width: 40vw;
+    text-decoration: none;
+}
+
+.contactList{
+    list-style: none;
+}
+
+.plus {
+    width: 5vh;
+    position: relative;
+}
+
+
+
+.purpleBox,
+.whiteBox{
+    min-height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+
+.purpleBox{
+    background-color: #4B2395;
+    color: #fff;
+    font-size: 1.2vw;
+    margin-bottom: 1vh;
+}
+
+.whiteBox{
+    background-color: #fff;
+    color: #000;
+    font-size: 1.1vw;
+    margin-bottom: 1vh;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+/* Botão de Voltar */
+.arrow {
+    width: 5vh;
+    top: 8vh;
+    left: 8vh;
+    
+}
+
+/* Main */
+.main {
+    flex-direction: column;
+    gap: 3vw;
+    margin-top: -2%;
+}
+
+/* Left */
+
+.leftMain div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftMain{
+    position: absolute;
+    top: 8vh;
+    right: 8vh;
+}
+
+.logo{
+    width: 20vh;
+}
+
+.lacoRoxo {
+    padding-top: 1vw;
+    margin-left: 40px;
+    width: 4vh;
+}
+
+.aurora{
+    display: none;
+}
+
+/* Right*/
+
+.title {
+    padding: 2%;
+    margin: 0;
+    font-size: 3.5vw;
+    font-family: 'Exo 2', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hands {
+    width: 14vw;
+}
+
+/* Contacts */
+
+.contacts {
+    width: 60vw;
+}
+
+.purpleBox ,
+.whiteBox  {
+    min-height: 9vh;
+}
+
+.purpleBox  {
+    font-size: 1.5rem;
+}
+
+.whiteBox  {
+    font-size: 1rem;
+}
+
+}
+
+
+@media screen and (max-width: 900px) {
+    /* Right*/
+
+.rightMain{
+    width: 80vw;
+    gap: 5vh;
+}
+
+.title {
+    font-size: 4.5vh;
+}
+
+
+/* Images */
+
+.centerImages {
+    display: flex;
+    gap: 3vh;
+    padding-top: 10vh;
+}
+
+.hands {
+    width: 25vw;
+}
+
+/* Contacts */
+
+.contacts {
+    width: 70vw;
+}
+
+.purpleBox  {
+    font-size: 1.1rem;
+    
+}
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .lacoRoxo{
+        display: none;
+    }
+
+    .centerImages {
+        padding-top: 15vh;
+    }
+   
+}
