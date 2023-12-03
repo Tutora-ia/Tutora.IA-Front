@@ -11,10 +11,7 @@
     min-height: 100vh;
     position: relative;
     background: #000;
-    height: 100vh; /* Defina a altura conforme necessário */
     overflow: hidden;
-    align-items: center;
-
 }
 
 .backgroundLogin::after {
@@ -50,17 +47,20 @@
     transform: translate(-50%, -50%);
 }
 
+.textTop{
+    display: none;
+}
+
 .wrapper{
     margin-left: 17%;
     width: 34%;
     background: rgba(217, 217, 217, 0.10);
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, .2); */
     color: #fff;
     border-radius: 10px;
     padding: 30px 40px;
-    margin-right: auto;
 }
 
  .wrapper h1{
@@ -68,6 +68,12 @@
     font-size: 3rem;
     text-align: center;
     margin-bottom: 2rem;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .icon{
@@ -78,13 +84,6 @@
     justify-content: center;
     margin-bottom: 3vh;
 }
-
-.form {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 
 .wrapper .inputbox{
     position: relative;
@@ -173,7 +172,7 @@
     display: flex;
     flex-direction: column;
     align-items: center; /* Adiciona isso para alinhar os elementos no centro horizontal */
-    width: 28.6875rem;
+    width: 30%;
     height: 26.4375rem;
     flex-shrink: 0;
     margin-right: 15%;
@@ -182,7 +181,8 @@
 .textright h1{
     color: #FFF;
     text-align: center;
-    font-family: 'Exo 2', sans-serif;    font-size: 2.25rem;
+    font-family: 'Exo 2', sans-serif;    
+    font-size: 2.25rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -191,18 +191,19 @@
 .textright h2{
     color: #FFF;
     text-align: center;
-    font-family: 'Poppins', sans-serif;    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;    
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-top: 3rem;
-
 }
 
 .textright h3{
     color: #FFF;
     text-align: center;
-    font-family: 'Poppins', sans-serif;    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;    
+    font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -247,4 +248,120 @@
 .ou{
     color: #6C33D7;
     font-weight: 600;
+}
+
+
+
+@media screen and (max-width: 1288px){
+    .box, 
+    .wrapper .rememberforgot {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1067px){
+    .wrapper{
+        width: 50%;
+        margin-left: 5%;
+    }
+    .textright {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 910px){
+    .wrapper .rememberforgot {
+        font-size: 12px;
+    }
+    .inputbox input {
+        font-size: 13px;
+    }
+
+    .textright h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+        .backgroundLogin{
+            flex-direction: column;
+        }
+
+        .wrapper {
+            width: 90%;
+            margin: 0%;
+            border: none
+        }
+
+        .wrapper .inputbox{
+            margin: 15px 0;
+        }
+
+        .wrapper .rememberforgot{
+            margin-bottom: 0px;
+        }
+
+        .wrapper .btn{
+            margin-bottom: 5px;
+        }
+
+        .textTop{
+            margin-top: 4%;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Adiciona isso para alinhar os elementos no centro horizontal */
+            width: 100%;
+            flex-shrink: 0;
+        }
+        
+        .textTop h1{
+            color: #FFF;
+            text-align: center;
+            font-family: 'Exo 2', sans-serif;    font-size: 2.25rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            font-size: 8vw;
+            margin-top: 5%;
+        }
+
+        .textTop h2{
+            color: #FFF;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;    font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            font-size: 3vw;
+            margin-top: 4%;
+            margin-bottom: 4%;
+        }
+        
+        .textTop h2 br{
+            display: none;
+        }
+
+        .textright h1,
+        .textright h2 {
+            display: none;
+        }
+        .textright{
+            margin-top: 20px;
+            width: 100%;
+        }
+        .textright h3{
+            font-size: 5.8vw;
+            margin-top: 0px;
+        }
+
+        .botao{
+            width: 60%;
+            height: 10%;
+            border-radius: 10px;
+            border: 1px solid #DDD;
+            margin-top: 10%;
+            font-size: 1rem;
+            margin-bottom: 0%;
+        }
 }

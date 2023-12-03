@@ -3,17 +3,20 @@ import Link from 'next/link'
 import styles from './page.module.css'
 import GoogleIcon from '../assets/google.svg'
 
-export default function Home() {
+export default function Login() {
 
     return (
         <div className={styles.backgroundLogin}>
 
+            <div className={styles.textTop}>
+                <h1>Que bom te ver<br />aqui novamente</h1>
+                <h2>Vamos embarcar nessa jornada <br />épica de aprendizado!</h2>
+            </div>
+
             <div className={styles.wrapper}>
-                
                 <div className={styles.circle}></div>
                 <form className={styles.form} action="">
                     <h1>Login</h1>
-                    <backButton />
                     <div className={styles.icon}>
                         <Image
                             className=''
@@ -47,7 +50,7 @@ export default function Home() {
 
                     <div className={styles.rememberforgot}>
                         <label><input type="checkbox" />Lembre-se de mim</label>
-                        <Link href={'/'}>
+                        <Link href={'/senha_reset'}>
                             Esqueci a senha
                         </Link>
                     </div>
@@ -64,7 +67,7 @@ export default function Home() {
                 <h3>Não tem uma conta?</h3>
 
                 <button type="button" className={styles.botao}>
-                    <Link href={'/Cadastro'}>
+                    <Link href={'/cadastro'}>
                         Cadastre-se
                     </Link>
                 </button>

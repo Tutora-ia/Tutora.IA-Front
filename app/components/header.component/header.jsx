@@ -30,10 +30,10 @@ export default function Header() {
                 </div>
                 <div className="containerDireita">
                     <div className="btnEntrar">
-                        <Link className="btnTexto" href="/Login">Entrar</Link>
+                        <Link className="btnTexto" href="/login">Entrar</Link>
                     </div>
                     <div className="btnCadastrar">
-                        <Link className="btnTexto" href="/Cadastro">Cadastre-se</Link>
+                        <Link className="btnTexto" href="/cadastro">Cadastre-se</Link>
                     </div>
                 </div>
             </header>

@@ -3,15 +3,13 @@ import Link from 'next/link'
 import styles from './page.module.css'
 import { exo, poppins } from '@/app/components/fonts.js'
 
-
-
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.container}> {/* the container fill a section */}
         <div className={styles.navBar}>
           <div className={styles.mask}>
-          
+            {/* tittle, sub tittle and description */}
             <div className='logoDescription'>
               <p className={`${styles.description}`}>
                 <Image
@@ -31,7 +29,7 @@ export default function Home() {
             <div className={styles.aurora}>
               <Image
                 alt='Foto da nossa IA Aurora'
-                src="Aurora.svg" width={500} height={500}
+                src="Aurora.svg" width={300} height={300}
                 layout='responsive'
               />
             </div>
@@ -39,7 +37,7 @@ export default function Home() {
             <div className={styles.btn}>
 
               <button type='button' className= {styles.btnStyle}>
-                <Link href="/">
+                <Link href="/cadastro">
                   <h2 className={exo.className}>CADASTRAR</h2>
                 </Link>
               </button>
@@ -47,7 +45,7 @@ export default function Home() {
               <br></br>
 
               <button type='button' className={`${styles.btnStyle} ${styles.btn2}`}>
-                <Link href="/">
+                <Link href="/login">
                   <h2 className={exo.className}>LOGIN</h2>
                 </Link>
               </button>
@@ -62,8 +60,8 @@ export default function Home() {
         <h1>Gamificando seu <br></br>
           aprendizado</h1>
         <p>
-          Pronto para se aventurar em uma jornada gamificada que revolucionará a maneira como as<br></br>
-          pessoas elevam seu nível em português? Apresentamos a você uma plataforma dinâmica e <br></br>
+          Pronto para se aventurar em uma jornada gamificada que revolucionará a maneira como as
+          pessoas elevam seu nível em português? Apresentamos a você uma plataforma dinâmica e 
           dedicada ao aprimoramento da língua portuguesa! Explore nosso conteúdo:
         </p>
 
@@ -71,6 +69,7 @@ export default function Home() {
         <div className={styles.section}>
           <section>
 
+            
             <div>
               <Image
                 className={`${styles.icon} ${styles.trilha}`}
@@ -159,8 +158,8 @@ export default function Home() {
             height={350}
             alt='IA icon'
           />
-          <div className={styles.intelegence}>
-            <h2>Inteligência Artificial</h2>
+          <div className={`${styles.intelegence}`}>
+            <h2 className={poppins.className}>Inteligência Artificial</h2>
             <p>
               Nossa IA, Aurora, impulsiona sua evolução de <br></br>
               conhecimento por meio de módulos <br></br>
@@ -176,15 +175,15 @@ export default function Home() {
           <div className={styles.apprenticeship}>
             <h2>Expandindo seu aprendizado</h2>
             <p>
-              Pontuamos uma abordagem educacional <br></br>
-              envolvente, onde, por meio de diversas estratégias, <br></br>
-              impulsionamos a evolução e equilibramos o nível, <br></br>
-              reconhecendo as diferentes demandas de cada <br></br>
-              usuario sem ficar restritos a soluções únicas.<br></br>
-              Nosso foco é no indivíduo, adaptando-nos às suas <br></br>
-              particularidades para aprimorar a experiência de <br></br>
-              aprendizado no "game" da educação,  em que cada <br></br>
-              peça é fundamental e suas particularidades são o <br></br>
+              Pontuamos uma abordagem educacional 
+              envolvente, onde, por meio de diversas estratégias, 
+              impulsionamos a evolução e equilibramos o nível, 
+              reconhecendo as diferentes demandas de cada 
+              usuario sem ficar restritos a soluções únicas.
+              Nosso foco é no indivíduo, adaptando-nos às suas 
+              particularidades para aprimorar a experiência de 
+              aprendizado no "game" da educação,  em que cada 
+              peça é fundamental e suas particularidades são o 
               epicentro da estratégia.
             </p>
           </div>  {/*end div apprenticeship */}
@@ -204,13 +203,13 @@ export default function Home() {
         <h1>PLANOS</h1>
 
         <h2 className={exo.className}>
-          Faça um upgrade no seu aprendizado! Escolha seu <br></br>
+          Faça um upgrade no seu aprendizado! Escolha seu
           plano ideal para um futuro mais que perfeito.
         </h2>
 
         <section >
 
-          <div className={styles.containerFree}> {/* card plan style */}
+          <div className={`${styles.containerFree} ${styles.free}`}> {/* card plan style */}
 
             <h3 className={styles.titleplans}>Básico</h3>
             <h4 className={styles.subtitleplans}>Funcionalidades gratuitas</h4>
@@ -243,7 +242,7 @@ export default function Home() {
           </div> {/* end div container monthly */}
 
           <div className={`${styles.containerFree} ${styles.containerYear}`}>
-            <h3 className={styles.destaque1}>PREMIUM ANUAL</h3>
+            <h3 className={styles.titleYear}>PREMIUM ANUAL</h3>
 
             <h4>R$XXX,XX<span>/por mês</span></h4>
             <p>Correção de redações limitada à 1 vez ao mês</p>
@@ -266,10 +265,9 @@ export default function Home() {
         <h1>COMO A PLATAFORMA FUNCIONA?</h1>
 
         <div className={styles.videoContainer}>
-          <video width="1500" height="700" controls autoplay muted loop>
+          <video autoPlay width="1000" height="500" muted loop>
             <source src="TutoraIA.mp4" type='video/mp4' />
           </video>
-
         </div>{/*end div video */}
       </div> {/*end containerFive */}
     </main> //end body

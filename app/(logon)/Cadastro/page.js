@@ -4,10 +4,15 @@ import styles from './page.module.css'
 import GoogleIcon from '../assets/google.svg'
 
 
-export default function Home() {
+export default function Cadastro() {
 
     return (
         <div className={styles.backgroundLogin}>
+
+            <div className={styles.textTop}>
+                <h1>Seja bem-vindo!</h1>
+                <h2>Preparado para dar um play na sua<br />evolução gramatical?</h2>
+            </div>
 
             <div className={styles.wrapper}>
                 <div className={styles.circle}></div>
@@ -64,7 +69,7 @@ export default function Home() {
                 <h3>Já tem uma conta?</h3>
 
                 <button type="button" className={styles.botao}>
-                    <Link href={'/Login'}>
+                    <Link href={'/login'}>
                         Login
                     </Link>
                 </button>

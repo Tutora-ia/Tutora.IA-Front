@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700;800&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700;800&family=Poppins:wght@200;400;700&display=swap');
 
 
 .container {
@@ -15,7 +15,7 @@
   }
   
   .main {
-    margin-top: 100px;
+    margin-top: 7.5vw;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -24,40 +24,45 @@
   .logoDescription {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.7vw;
+  }
+
+  .logo{
+    margin-top: 5vw;
+    width: 30vw;
   }
   
   /* TITTLE, SUB TITTLE AND DESCRIPTION */
   .title,
   .description,
   .subTitle{
-    margin-left: 130px;
+    margin-left: 9.5vw;
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 2.2vw;
     font-weight: 900;
     font-family: 'Poppins', sans-serif;
   }
   
   .subTitle {
     color: #fff;
-    font-size: 1.7rem;
-    margin-bottom: 10px;
+    font-size: 1.7em;
+    margin-bottom: 0.7vw;
   }
   .description {
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.9vw;
   }
   
   /* BUTTON SETTINGS  */
   .btn {
-    margin-left: 120px;
+    margin-left: 8.8vw;
   }
   
   .btn button{
     background: #4B2395;
     border-color: #4B2395;
-    border-radius: 8.62px;
-    margin: 15px;
+    border-radius: 0.65vw;
+    margin: 1.09vw;
     box-shadow: none;
     border-style: solid;
     cursor: pointer;
@@ -65,7 +70,7 @@
   
   .btn a{
     color: #fff;
-    font-size: 21px;
+    font-size: 1.313em;
     font-family: 'Exo 2', sans-serif;
   }
   
@@ -73,17 +78,17 @@
       background: #4B2395;
   }
   .btn a h2{
-    padding: 14px 220px;
+    padding: 1.02vw 16vw;
   }
   
   .btn .btn2 {
     background: transparent;
     border-color: #4B2395;
-    border-radius: 8.62px;
-    margin: 15px;
+    border-radius: 0.65vw;
+    margin: 1.1vw;
   }
   .btn .btn2 a h2{
-    padding: 14px 264px;
+    padding: 1.02vw 18.7vw;
   }
   
 
@@ -91,9 +96,8 @@
   .aurora{
     width: 20%;
     position: absolute;
-    left: 1040px;
-    top: 110px;
-    display: inline-block;
+    right: 10vw;
+    top: 9.05vw;
   }
   
     .containerTwo,
@@ -110,7 +114,7 @@
       color: #d9d9d9;
       font-size: 5rem;
       text-align: center;
-      margin: 66px;
+      margin: 4.8vw;
       font-family: 'Exo 2', sans-serif;
       font-weight: 700;
     }
@@ -119,26 +123,27 @@
   .containerTwo p{
     color: #fafafa;
     font-family: 'Poppins', sans-serif; 
-    font-weight: 400;
-    font-size: 25px;
+    font-weight: 200;
+    font-size: 1.8vw;
     text-align: center;
+    margin: 4.8vw;
   }
   
   .containerTwo section{
     display: grid;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 22vw 22vw 22vw;
     align-items: center;
     justify-content: center;
     margin-top: 2.8%;
   }
   .containerTwo .icon{
-    margin: 45px;
+    margin: 3.3vw;
     display: inline-block;
   
   }
   
   .containerTwo h2{
-    font-size: 20px;
+    font-size: 1.25em;
     text-align: center;
     color: #fff;
     font-weight: 300;
@@ -148,15 +153,15 @@
   /* container three */
   .containerThree section{
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 22vw 22vw;
   }
   .containerThree h2{
     color: #fff;
-    font-size: 30px;
-    width: 500px;
-    margin-left: 622px;
-    margin-top: 50px;
-    margin-right: 110px;
+    font-size: 1.875vw;
+    width: 36.6vw;
+    margin-left: 42.2vw;
+    margin-top: 3.6vw;
+    margin-right: 8.05vw;
     text-align: left;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
@@ -164,33 +169,33 @@
 
   .containerThree p{
     color: #fff;
-    font-size: 1.2rem;
-    width: 500px;
-    margin: 120px;
-    margin-left: 420px;
+    font-size: 1.4vw;
+    width: 36.7vw;
+    margin: 8.7vw;
+    margin-left: 26vw;
     text-align: right;
-    margin-top: 10px;
-    font-weight: 400;
+    margin-top: 0.7vw;
+    font-weight: 200;
     font-family: 'Poppins', sans-serif;
   }
    .ia{
-    margin-top: 10px;
-    margin-left: 275px;
+    margin-top: 0.7vw;
+    margin-left: 14vw;
   }
   .containerThree .apprenticeship h2{
-    margin: 120px;
-    margin-top: 50px;
+    margin: 8.8vw;
+    margin-top: 3.7vw;
     margin-bottom: 0px;
-    margin-left: 350px;
+    margin-left: 14vw;
   }
   .containerThree .apprenticeship p{
-    margin: 120px;
-    margin-top: 10px;
+    margin: 8.8vw;
+    margin-top: 0.7vw;
     text-align: left;
-    margin-left: 350px;
+    margin-left: 14vw;
   }
   .learning{
-    margin-left: 580px;
+    margin-left: 40vw;
   }
   
   /* container four */
@@ -201,53 +206,53 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    margin: 120px;
+    margin: 7.3vw;
     font-weight: 700;
     font-family: 'Exo 2', sans-serif;
   }
   
   .containerFour section{
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
-  .containerFour section .containerFree{
-    justify-content: center;
-    align-items: center;
-  }
+
    .containerFree{
-    width: 270px;
+    width: auto;
     background-color: #D9D9D9;
     border: none;
-    height: 450px;
+    height: 70.8vh;
+    margin: 4.8vw;
+    }
+    .free{
+      height: auto;
     }
   
   .containerFour  p{
-    width: 220px;
     font-family: 'Poppins', sans-serif;
     color: #000000;
-    font-size: 15px;
-    margin: 10px 30px 0px 30px;
+    font-size: 0.938em;
+    margin: 0.7vw 2.1vw 0vw 2.1vw;
+    font-weight: 200;
   }
   
   .containerFour h3{
     font-family: 'Exo 2', sans-serif;
     color: #A3218E;
     text-align: center;
-    margin: 20px 10px 20px 10px;
+    margin: 1.5vw 0.7vw 1.5vw 0.7vw;
   }
   
   .containerFour .containerMonthly{
-    height: 550px;
+    height: auto;
   }
   
   .containerMonthly h3{
     font-family: 'Exo 2', sans-serif;
     color: #fff;
     background-color: #4B2395;
-    padding: 20px 10px 20px 10px;
-    margin: 0px;
+    padding: 1.5vw 0.7vw 1.5vw 0.7vw;
+    margin: 0vw;
   }
   
   .containerMonthly h4,
@@ -255,494 +260,271 @@
     font-size: 2rem;
     font-family: 'Poppins', sans-serif;
     color: #000;
-    margin: 10px 30px 40px 30px;
-    font-weight: bold;
+    margin: 0.7vw 2.1vw 2.9vw 2.1vw;
+    font-weight: 400;
   }
   .containerMonthly span,
   .containerYear span{
     font-size: 0.9rem;
   }
   .containerFour .containerYear{
-    height: 600px;
+    height: auto;
   }
   .containerFour .subtitleplans{
     font-family: 'Poppins', sans-serif;
     text-align: center;
     color:#A3218E;
-    font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 2.1vw;
   }
   .containerFour .btnFour{
     font-family: 'Exo 2', sans-serif;
     border: 2px solid #ad2496;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 0.938em;
     background-color: #D9D9D9;
     color: #A3218E;
-    border-radius: 4px;
+    border-radius: 0.3vw;
     cursor: pointer;
-    margin: 30px;
-    padding: 10px 50px;
+    margin: 1.2vw;
+    margin-top: 4.4vw;
+    padding: 0.7vw 5vw;
   }
   
   .containerFour .monthly{
     color: #fff;
     background-color: #4B2395;
     border: 2px solid #4B2395;
-    margin-left: 25px;
+    margin-left: 1.09vw;
+    margin-top: 1.2vw;
   }
   
   .containerYear h3{
     color: #fff;
     background-color: #3958B1;
-    padding: 20px 10px 20px 10px;
-    margin: 0px;
+    padding: 1.4vw 0.7vw 1.4vw 0.7vw;
+    margin: 0vw;
   }
   .containerFour .year{
     color: #fff;
     background-color: #3958B1;
     border: 2px solid #3958B1;
-    margin-left: 25px;
+    margin-left: 1.09vw;
+    margin-top: 1.2vw;
   }
   .containerFive .videoContainer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
     max-width: 100%; 
     max-height: 100%;
-    margin-top: 0px;
+    margin: 7.3vw;
+    pointer-events: none;
   }
    .containerFive h1{
-    margin: 120px;
+    margin: 8.7vw;
    }
   
     
   /* RESPONSIVE SETTINGS */
   
-  @media screen and (min-width: 320px) and (max-width: 480px){
+  @media screen and (max-width: 500px){
     /* container */
-    .title{
-      margin-left: 30px;
-      font-size: 3.2rem;
-    }
-    .subTitle{
-      margin-left: 30px;
-      font-size: 1.1rem;
-    }
-    .description{
-      margin-left: 30px;
-      margin-right: 20px;
-      font-size: 0.9rem;
+    .mask{
+      display: inline-block;
+      width: 100vw;
     }
     /* BUTTON RESPONSIVE  */
-    .btn button{
-      margin: 2px;
-      margin-left: -80px;
-      border: solid 1px linear-gradient(to left, #06EFFF, #A3218E, #4B2395);
+    .logo{
+      margin-top: 25vw;
+      width: 55vw;
+      height: 15vw;
     }
+    .description{
+      margin: 10vw;
+      font-size: 0.8em;
+      margin-top: 20vw;
+    }
+  
     .btn a{
-      font-size: 10px;
+      font-size: 0.75em;
     }
-    .btn .btn2{
-      margin-left: -80px;
-    }
+
     .btn a h2{
-      padding: 10px 79px;
+      padding: 3vw 25vw;
     }
     .btn .btn2 a h2{
-      padding: 10px 100px;
+      padding: 3vw 31.5vw;
     }
     .aurora{
-      width: 0%; 
-      left: 0px; 
-      top: 270px; 
-      position: absolute;
+      top: 32vw;
     }
-  
-  
-  
-    /* container two */
-    .containerTwo,
-      .containerThree,
-      .containerFour,
-      .containerFive{
-        background: #111118;
-      }
-  
       .containerTwo h1,
       .containerThree h1,
       .containerFour h1,
       .containerFive h1{
         font-size: 2.0rem;
-        margin: 30px;
+        margin: 2.1vw;
       }
   
     /* container two or section two */
     .containerTwo p{
       font-size: 0.9rem;
-      margin: 30px;
-      margin-bottom: -30px;
+      margin-top: 5vw;
     }
   
     .containerTwo section{
-      grid-template-columns: 170px 170px;
+      grid-template-columns: 30.4vw 30.4vw;
       margin-top: 2.8%;
-      margin-bottom: 100px;
+      margin-bottom: 7.3vw;
     }
     
     .icon{
-      width: 80px;
-      margin-bottom: 80px;
-      margin-top: 0px;
+      width: 25vw;
+      margin-bottom: 5.8vw;
     }
     .containerTwo .icon{
-      margin: 45px;
+      margin: 3.2vw;
     }
     
     .containerTwo h2{
-      font-size: 10px;
+      font-size: 0.625em;
       font-weight: 300;
-      margin-top: -100px;
-      padding-top: 10px;
+      margin-top: -18vw;
     }
     
     /*container three */
     .containerThree section{
-      grid-template-columns: 0px;
+      grid-template-columns: 0vw;
+      align-items: center;
     }
     .containerThree h2{
-      font-size: 20px;
-      width: 250px;
-      margin-left: 622px;
-      margin-top: 50px;
-      margin-right: 120px;
-    
+      width: 80vw;
+      margin-left: 20vw;
     }
-    .containerThree .intelegence p{
-      width: 350px;
-      height: 100px;
-      padding-right: 20px;
+    .containerThree p{
+      width: 80vw;
       text-align: center;
-      padding-top: -2px;
+      margin-left: 10vw;
+      margin-top: 0.7vw;
+      margin-bottom: 1vw;
+      font-size: 0.688em;
     }
   
     .containerThree .intelegence h2{
-      font-size: 19px;
-      margin-left: 40px;
-      text-align: center;
-      margin-top: 20px
+      font-size: 1.188em;
     }
   
-    .containerThree .intelegence p{
-      margin-left: 0px;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      font-size: 11px;
-    }
   
-    .ia{
+    .ia,
+    .learning{
       width: auto;
       height: auto;
-      margin-left: 85px;
-      margin-top: -0px;
+      margin-left: 28vw;
+      margin-top: 0;
     }
     
     .containerThree .apprenticeship h2{
-      font-size: 19px;
-      margin-left: 40px;
+      font-size: 1.188em;
+      margin-left: 12vw;
       text-align: center;
-      margin-top: 20px
     }
-    .containerThree .apprenticeship p{
-      height: 200px;
-      padding-top: -2px;
-      width: 300px;
-      margin-left: 10px;
-      margin-top: 10px;
-      margin-bottom: 0px;
-      font-size: 11px;
-      text-align: center;
-      white-space: nowrap;
-      overflow: hidden;
-    }
+
     .learning{
       grid-row: 1;
-      width: auto;
-      height: auto;
-      margin-left: 85px;
-      margin-top: -0px;
     }
+
     /* container four */
     .containerFour h2{
-      font-size: 19px;
-      margin-left: 0px;
-      margin-top: 0px;
-      margin-right: 0px;
-      margin-bottom: 30px;
+      font-size: 1.188em;
     }
   
-  
+    .containerFour section{
+      flex-direction: column;
+      gap: 2vw;
+    }
+    .containerFour .containerFree{
+      width: 100vw;
+      text-align: center;
+      height: auto;
+    }
+
+
+    .containerFour .containerFree p{
+      font-size: 0.888em;
+      width: 80vw;
+      margin-left: 10vw;
+    }
+
+    .containerFour .titleMonthly{
+      padding: 10vw;
+    }
+
+    .containerFour .titleYear{
+      padding: 10vw;
+    }
+
+    .containerFour .btnFour{
+      padding: 5vw 10vw;
+      margin-top: 5vw;
+      border-radius: 5px;
+    }
   /* container five */
-    .videoContainer{
-      margin-bottom: -100px;
+    .containerFive video{
+      width: 100vw;
+      margin-bottom: -50vw;
+      overflow: hidden;
     }
-  
-    .videoContainer video{
-      width: 300px;
-      height: 200px;
-    
-    }
-  
     .containerFive h1{
-      margin-bottom: -140px;
-    
+      margin-bottom: -50vw;
     }
   }/*  end media screen */
-  
-  
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-  
-    .title{
-      margin-left: 2%;
-      font-size: 4.5rem;
-      margin-right: 2%;
-      text-align: center;
-      background-size: 100%;
+
+  @media screen and (max-width: 1083px) and (min-width: 799px){
+     .btn .btn2 a h2{
+        padding: 1vw 19.5vw;
+      }
+
+      .aurora{
+        top: 13vw;
+      }
+      
+      .containerTwo .icon{
+        width: 15vw;
+      }
+
+  }
+
+  @media screen and (max-width: 798px) and (min-width: 501px){
+    .logo{
+      margin-top: 15vw;
+      height: 9vw;
     }
-    .subTitle{
-      margin-left: 2%;
-      font-size: 150%;
-      text-align: center;
-      margin-right: 2%;
-    }
-    .description{
-      margin-left: 2%;
-      margin-right: 2%;
-      text-align: center;
-      font-size: 20px;
-      margin-bottom: -350px;
-    }
-    /* BUTTON RESPONSIVE  */
-    .btn button{
-      margin: 2px;
-      margin-left: 30px;
-    }
-    .btn a{
-      font-size: 10px;
-    }
-    .btn .btn2{
-      margin: 30px;
-      margin-top: 10px;
-      margin-bottom: 100px;
-    }
-    .btn a h2{
-      padding: 20px 179px;
-    }
+
     .btn .btn2 a h2{
-      padding: 20px 200px;
+      padding: 1vw 20.5vw;
     }
+
     .aurora{
-      width: 29%; 
-      left: 260px; 
-      top: 55%; 
-      position: relative;
-    }
-  
-  
-  
-    /* container two */
-    .containerTwo,
-      .containerThree,
-      .containerFour,
-      .containerFive{
-        background: #111118;
-      }
-  
-      .containerTwo h1,
-      .containerThree h1,
-      .containerFour h1,
-      .containerFive h1{
-        font-size: 4.0rem;
-        margin: 30px;
-      }
-  
-    /* container two or section two */
-    .containerTwo p{
-      font-size: 20px;
-      margin: 130px;
-      margin-bottom: -30px;
-      margin-top: 0px;
-    }
-      
-  
-    .containerTwo section{
-      grid-template-columns: 200px 200px 200px;
-      margin-top: 2.8%;
-      margin-bottom: 100px;
-      margin-right: 50px;
-     
+      top: 22vw;
     }
     
-    .icon{
-      width: 150px;
-      margin-bottom: 80px;
-      margin-top: 0px;
-    }
     .containerTwo .icon{
-      margin: 45px;
-    }
-    
-    .containerTwo h2{
-      font-size: 20px;
-      font-weight: 300;
-      margin-top: -50px;
-      padding-top: 10px;
-      margin-left: 35px;
-    }
-    
-    /*container three */
-    .containerThree section{
-      grid-template-columns: 0px;
-    }
-    
-    .containerThree h2{
-      width: 250px;
-      margin-left: 622px;
-      margin-top: 50px;
-      margin-right: 120px;
-      margin-bottom: 10px;
+      width: 15vw;
     
     }
-    
-    .containerThree .intelegence p{
-      height: 100px;
-      margin-left: 190px;
-      font-size: 18px;
-    }
-  
-    .containerThree .intelegence h2{
-      font-size: 25px;
-      margin-left: 440px;
-      margin-top: -220px;
-      
-    }
-  
+
     .ia{
-      width: 250px;
-      height: 250px;
-      margin-left: 20px;
-      margin-top: 50px;
+      width: 30vw;
+      height: 30vw;
     }
-    
-    .containerThree .apprenticeship h2{
-      margin-left: 60px;
-    }
-    
-    .containerThree .apprenticeship p{
-      font-size: 18px;
-      width: 690px;
-      margin-left: 60px;
-    }
+
     .learning{
-      width: 230px;
-      margin-top: -480px;
-      margin-left: 530px;
-  
+      width: 30vw;
+      height: 30vw;
     }
-  
-  
-    /* container four */
-    .containerFour h2{
-      font-size: 30px;
-      margin-left: 0px;
-      margin-top: 0px;
-      margin-right: 0px;
-      margin-bottom: 30px;
+    .containerFive video{
+      width: 100vw;
+      margin: 10vw;
     }
-  
-  .containerFour section{
-    align-items: left;
-    grid-template-columns: 100px;
-    justify-content: left;
-  
-  }
-  .containerFour .containerFree{
-    margin-bottom: 10px;
-    margin-left: 260px;
-    
-  }
-  /* container five */
-    .videoContainer{
-      margin-bottom: 0px;
-    }
-  
-    .videoContainer video{
-      width: 700px;
-      height: 600px;
-      margin-top: -250px;
-    
-    }
-  
-    .containerFive h1{
-      margin-bottom: -140px;
-    
-    }
-  }  /* end midia scren*/
-  
-  
-  @media screen and (max-width: 1280px) and (min-height: 720px) {
-    .title{
-      font-size: 4.5rem;
-    }
-    .aurora{ 
-      width: 20%;
-      position: absolute;
-      left: 950px;
-      top: 60px;
-      display: inline-block;
-  
-    }
-    .subTitle{
-      margin-left: 120px;
-      font-size: 1.5rem;
-    }
-    .description{
-      font-size: 1rem;
-    }
-    .section{
-      margin-bottom: 50px;
-    }
-  
-    .btn {
-      margin-left: 100px;
-    }
-    
-    .btn a h2{
-      padding: 10px 129px;
-    }
-    
-    .btn .btn2 a h2{
-      padding: 10px 172px;
-    }
-  
-    .containerFour h1{
-      margin-bottom: 20px;
-    }
-  .containerFour h2{
-    font-size: 35px;
-    margin-top: 0px;
-  }
-  
-  .containerFive h1{
-    margin-bottom: 0px;
-  }
-  
-  .videoContainer{
-    margin-top: 0px;
-  }
-  
-  .containerThree{
-    margin-bottom: 0px;
-  }
+
   }
