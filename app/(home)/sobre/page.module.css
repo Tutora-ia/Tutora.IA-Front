@@ -1,295 +1,453 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
-.main{
-    background-color: #101017;
-    opacity: 0.9;
-}
+/* Sobre nós */
 
-.container
- {
-    background: linear-gradient(135deg, #101017, #170C2F, #2B1453, #49228E, #7A218E,  #49228E, #2B1453, #170C2F, #101017);
-
-}
-
-.mask {
-
-    background-color: #09090C;
-    background-size: cover;
-    opacity: 0.9;
-
-}
-
-
-.mask h2{
-    font-size: 4rem;
-    text-align: center;
-    padding: 3vw 0;
-
-}
-
-#logo{
-    width: 50vw;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#psobreNos{
-    padding: 4vw 15vw 8vw 15vw;
-    text-align: center;
-}
-
-.sobreAurora{
-    border-bottom: 2px solid rgba(82, 82, 82, 0.50);
-    display: flex;
-    align-items:center;
-    padding: 10vh 10vw;
-}
-
-.aurora{
-    height: 75vh;
-    margin-right: 8vw;
-}
-
-.auroraContainer h2{
-    font-size: 3rem;
-    padding-bottom: 10vh;
-}
-
-.conhecaNossoTime h2{
-    font-size:3rem;
-    padding: 10vh;
-    padding-bottom: 25vh;
-    text-align: center;
-}
-
-.fileira{
+.aboutUs {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
 }
 
-.devContainer{
-    padding: 0 4vw 10vw 4vw;
+
+#logo {
+    width: 50vw;
+}
+
+.pAboutUs {
+    text-align: center;
+    width: 80%;
+}
+
+.aboutUs .h2{
+    margin-top: 5rem;
+}
+
+/* Sobre a Aurora */
+
+.aboutAurora,
+.loading,
+.levelingUp {
+    border-bottom: 2px solid rgba(82, 82, 82, 0.50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw;
+    text-align: center;
+
+}
+
+.aboutAurora {
+    padding-top: 0;
+}
+
+.aurora {
+    height: 70vh;
+    margin-right: 8vw;
+}
+
+.auroraContainerInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    width: 40%;
+}
+
+/* Carregando */
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+.loading,
+.levelingUp {
+    flex-direction: column;
+    gap: 4rem;
+
+}
+
+.gears {
+    width: 720px;
+    height: 200px;
+    position: relative;
+    margin: 3rem;
+}
+
+
+.gear {
+    position: absolute;
+}
+
+.gear1 {
+    width: 200px;
+    left: 35%;
+    rotate: -5deg;
+    animation: rotate 20s infinite linear;
+}
+
+.gear2 {
+    width: 150px;
+    top: 61%;
+    left: 16%;
+    rotate: 11deg;
+    animation: rotate 20s infinite linear reverse;
+
+}
+
+.gear3 {
+    width: 80px;
+    bottom: -35%;
+    left: 66%;
+    rotate: -10deg;
+    animation: rotate 20s infinite linear;
+
+
+}
+
+.gear4 {
+    width: 100px;
+    bottom: -50%;
+    left: 52%;
+    rotate: 10deg;
+    animation: rotate 20s infinite linear reverse;
+}
+
+.gear5 {
+    width: 120px;
+    rotate: -5deg;
+    top: -19%;
+    right: 22%;
+    animation: rotate 20s infinite linear reverse;
+}
+
+.gear6 {
+    width: 60px;
+    top: 28%;
+    left: 20.5%;
+    ;
+    rotate: -10deg;
+    animation: rotate 20s infinite linear;
+
+}
+
+@keyframes loadingAnimation {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.loadingBar {
+    margin-top: 2rem;
+    width: 600px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 4px #6C33D7;
+    overflow: hidden;
+}
+
+.loadingBarFill {
+    height: 100%;
+    width: 0;
+    background-color: #ffffff;
+    animation: loadingAnimation 5s linear infinite;
+}
+
+/* Subimdo de Nível */
+
+.level{
+    height: 80px;  
+}
+
+
+/* Nosso Time */
+
+.MeetOurTeam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5vw 0;
+    gap: 4rem;
+    box-sizing: content-box;
+}
+
+.MeetOurTeam .h2 {
+    padding-bottom: 3rem;
+}
+
+.rowTeam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    gap: 5rem;
 }
 
 /* Equipe Conatiner */
-.containerInformacoes{
-    width: 30vw;
-    height: 40vw;
-    background-color: #333333;
+
+.devContainer {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.containerInformation {
+    width: 100%;
+    height: 90%;
+    background-color: #EEEEEE;
     border-radius: 1rem;
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: baseline;
+    flex-direction: column;
+}
+
+.devInformation {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10%;
+    flex-direction: column;
+    position: relative;
+    top: -10%;
+    gap: 1rem;
+}
+
+.devFunctions {
+
+    font-weight: 600;
+    color: #000;
+}
+
+.devMessage {
+    height: 40%;
+    width: 100%;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.informacoes{
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-    padding: 4vw 2vw;
-    margin-bottom: 4vw;
-
-}
-
-.cargos{
-    text-align: center;
-    font-size: 1.3vw;
-    text-decoration: underline;
-    font-weight: 100;
-}
-
-.mensagem{
-    position:absolute;
-    bottom: 10%;
-    padding: 0 2vw;
-    text-align: center;
-    font-size: 1.2vw;
-
-}
-
-.containerInformacoes svg{
+.vector {
     position: absolute;
     bottom: 0;
-}
-
-.imageEquipe{
-    width: 14vw;
-    border-radius: 100%;
-    position: absolute;
-    top: -20%;
     left: 50%;
     transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 1rem;
+}
+
+.message {
+    padding: 3vw 3vw 0 3vw;
+    text-align: center;
+    font-size: 1.2vw;
+    z-index: 2;
+}
+
+
+
+.devPhoto {
+    width: 14vw;
+    height: 15vw;
+    border-radius: 100%;
     border: solid 1vw;
 }
 
-.nome{
-    font-size: 2.2vw;
+.name {
+    padding-top: 1rem;
+    font-size: 1.8vw;
     text-align: center;
 }
 
 /* Beatriz */
 
-#beatrizImage{
+#beatrizImage {
     border-color: #A3218E;
 }
 
-.nomeBeatriz{
+.nameBeatriz {
     color: #A3218E;
 }
 
 /* Camille */
 
-#camilleImage{
+#camilleImage {
     border-color: #832290;
 }
 
-.nomeCamille{
+.nameCamille {
     color: #832290;
 }
 
 /* Davi */
 
-#daviImage{
+#daviImage {
     border-color: #722292;
 }
 
-.nomeDavi{
+.nameDavi {
     color: #722292;
 }
 
 /* Erick */
 
-#erickImage{
+#erickImage {
     border-color: #5A2294;
 }
 
-.nomeErick{
+.nameErick {
     color: #5A2294;
 }
 
 /* Erick */
 
-#hernandoImage{
+#hernandoImage {
     border-color: #502394;
 }
 
-.nomeHernando{
+.nameHernando {
     color: #502394;
 }
 
 /* Leonardo */
 
-#leonardoImage{
+#leonardoImage {
     border-color: #402D99;
 }
 
-.nomeLeonardo{
+.nameLeonardo {
     color: #402D99;
 }
 
 /* Marcos */
 
-#marcosImage{
+#marcosImage {
     border-color: #1B50A8;
 }
 
-.nomeMarcos{
+.nameMarcos {
     color: #1B50A8;
 }
 
 /* Rian */
 
-#rianImage{
-    border-color:#0465B2;
+#rianImage {
+    border-color: #0465B2;
 }
 
-.nomeRian{
+.nameRian {
     color: #0465B2;
 }
 
-@media (max-width: 1400px){
+@media (max-width: 1400px) {
 
-    #logo{
+    #logo {
         width: 70vw;
     }
-    .sobreAurora{
+
+    .sobreAurora {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .aurora{
+
+    .aurora {
         margin-right: 0;
-        
+
     }
-    
-    .auroraContainer h2{
+
+    .auroraContainer h2 {
         text-align: center;
         font-size: 3rem;
         padding: 10vh;
     }
 
-    .auroraContainer p{
+    .auroraContainer p {
         text-align: center;
         padding: 0 10vh;
     }
-    
+
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
 
-    #logo{
+    #logo {
         padding: 5vh;
     }
-    .fileira{
+
+    .fileira {
         flex-direction: column;
     }
-    
-    .devContainer{
+
+    .devContainer {
         padding: 0 4vh 20vh 4vh;
     }
-    
+
     /* Equipe Conatiner */
-    .containerInformacoes{
+    .containerInformacoes {
         width: 50vh;
         height: 80vh;
-        
+
     }
-    .mensagem{
-        position:absolute;
+
+    .mensagem {
+        position: absolute;
         bottom: 10%;
         padding: 0 4vh;
         text-align: center;
         font-size: 2.5vh;
-    
+
     }
 
-    .cargos{
+    .cargos {
         font-size: 3vh;
         padding: 0 4vh;
     }
 
-    
-    .containerInformacoes svg{
+
+    .containerInformacoes svg {
         position: absolute;
         bottom: 0;
     }
-    
-    .imageEquipe{
+
+    .imageEquipe {
         width: 25vh;
     }
-    
-    .nome{
+
+    .name {
         font-size: 2.2rem;
         text-align: center;
     }
 
 }
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
     /* p{
         font-size: 1rem;
     } */

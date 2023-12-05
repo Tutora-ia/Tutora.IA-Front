@@ -113,3 +113,11 @@ a {
   height: 2px;
   z-index: 999;
 }
+
+p{
+  font-size: 1.4rem;
+}
+
+h2{
+  font-size: 3rem;
+}
