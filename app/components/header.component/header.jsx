@@ -2,8 +2,9 @@
 
 import { exo } from '../fonts.js'
 import Image from 'next/image.js'
+import Menu from "@/app/components/burguerMenu/burguerMenu.jsx"
 import Link from 'next/link.js'
-import styles from './header.css'
+import './header.css'
 
 export default function Header() {
     return (
@@ -19,11 +20,10 @@ export default function Header() {
                             alt="Logo Tutora.IA"
                         />
                     </div>
-                    <nav>
+                    <nav className='navBar'>
                         <ul>
                             <li><Link className="navBarLink" href="/">Home</Link></li>
                             <li><Link className="navBarLink" href="/sobre">Sobre</Link></li>
-                            {/* <li><Link className="navBarLink" href="/">Planos</Link></li> */}
                             <li><Link className="navBarLink" href="/suporte">Suporte</Link></li>
                         </ul>
                     </nav>
@@ -36,6 +36,7 @@ export default function Header() {
                         <Link className="btnTexto" href="/cadastro">Cadastre-se</Link>
                     </div>
                 </div>
+                <Menu></Menu>
             </header>
             <div className="linha" />
         </>
