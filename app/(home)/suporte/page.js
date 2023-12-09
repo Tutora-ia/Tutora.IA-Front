@@ -7,7 +7,7 @@ import ArrowBackButton from '@/app/components/arrowBackButton.component/arrowBac
 
 
 
-export default function Home() {
+export default function Suporte() {
   return (
     <main className={styles.container}>
       <div className={styles.containerTitle}>
@@ -21,7 +21,7 @@ export default function Home() {
           className={styles.textoDuvidas} 
           placeholder="| Digite suas dúvidas aqui">               
         </input>
-          <Image className={styles.btnSearch} src={search} width='30' height='30'/>
+          <Image className={styles.btnSearch} alt="SearchButton" src={search} width='30' height='30'/>
       </div> {/* end div duvidas */}
 
       <div className="aba">

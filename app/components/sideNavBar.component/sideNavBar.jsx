@@ -16,12 +16,14 @@ export default function SideNavBar() {
     <div className="sideNavBar">
       <div className="cima">
         <div className="logoContainer">
-          <Image
-            src={Logo}
-            alt="Logo Tutora.IA"
-            width={110}
-            height={110}
-          />
+            <Image
+              src={Logo}
+              alt="Logo Tutora.IA"
+              fill={true}
+              className="logoImage"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+
         </div>
         <div className="navIcon">
           <Link className="Links" href="/">

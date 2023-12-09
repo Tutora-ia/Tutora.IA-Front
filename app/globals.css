@@ -78,6 +78,24 @@
   padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+
+/* Estilos para o scroll */
+/* Estilos para o Chrome, Safari e Opera */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(85, 85, 85, 0.404);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
 }
 
 html,

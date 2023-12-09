@@ -1,7 +1,7 @@
 import styles from './page.module.css'
 import BackGround from '@/app/components/backgroundLinearGradient.component/backgroundLinearGradient.jsx'
 
-export default function Home() {
+export default function Sobre() {
 
     return (
         <BackGround BackGround

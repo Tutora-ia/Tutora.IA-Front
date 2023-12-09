@@ -1,0 +1,13 @@
+.purpleBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    width: 93%;
+    height: 94.4vh;
+    margin-top: 3vh;
+    background: #130827;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
