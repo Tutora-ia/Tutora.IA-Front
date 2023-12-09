@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 
 
 /* Sobre nós */
@@ -9,7 +10,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 
@@ -22,9 +23,6 @@
     width: 80%;
 }
 
-.aboutUs .h2{
-    margin-top: 5rem;
-}
 
 /* Sobre a Aurora */
 
@@ -47,6 +45,10 @@
 .aurora {
     height: 70vh;
     margin-right: 8vw;
+}
+
+.aurora2 {
+    display: none;
 }
 
 .auroraContainerInformation {
@@ -168,10 +170,10 @@
     animation: loadingAnimation 5s linear infinite;
 }
 
-/* Subimdo de Nível */
+/* Subindo de Nível */
 
-.level{
-    height: 80px;  
+.level {
+    height: 80px;
 }
 
 
@@ -187,8 +189,9 @@
     box-sizing: content-box;
 }
 
-.MeetOurTeam .h2 {
+.MeetOurTeam h2 {
     padding-bottom: 3rem;
+    text-align: center;
 }
 
 .rowTeam {
@@ -207,6 +210,7 @@
     height: 90%;
     display: flex;
     align-items: center;
+    border: none;
 }
 
 .containerInformation {
@@ -244,12 +248,13 @@
 .devMessage {
     height: 40%;
     width: 100%;
-    border: none;
+    border-radius: 1rem;
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .vector {
@@ -257,7 +262,7 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
+    width: 120%;
     height: 100%;
     z-index: 1;
     border-radius: 1rem;
@@ -269,7 +274,6 @@
     font-size: 1.2vw;
     z-index: 2;
 }
-
 
 
 .devPhoto {
@@ -365,91 +369,259 @@
     color: #0465B2;
 }
 
-@media (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
 
     #logo {
-        width: 70vw;
+        width: 80vw;
+        min-width: 280px;
     }
 
-    .sobreAurora {
+    .pAboutUs {
+        font-size: 1rem;
+    }
+
+
+    .aboutAurora,
+    .loading,
+    .levelingUp {
+        padding: 10vh 5vw;
+
+    }
+
+    .MeetOurTeam {
+        gap: 0;
+
+    }
+
+
+    .rowTeam {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .aurora {
-        margin-right: 0;
+        height: 200vh;
+        width: 700px;
+        gap: 12rem;
 
     }
 
-    .auroraContainer h2 {
-        text-align: center;
-        font-size: 3rem;
-        padding: 10vh;
-    }
 
-    .auroraContainer p {
-        text-align: center;
-        padding: 0 10vh;
-    }
-
-}
-
-@media (max-width: 1000px) {
-
-    #logo {
-        padding: 5vh;
-    }
-
-    .fileira {
-        flex-direction: column;
-    }
 
     .devContainer {
-        padding: 0 4vh 20vh 4vh;
-    }
-
-    /* Equipe Conatiner */
-    .containerInformacoes {
-        width: 50vh;
-        height: 80vh;
-
-    }
-
-    .mensagem {
-        position: absolute;
-        bottom: 10%;
-        padding: 0 4vh;
-        text-align: center;
-        font-size: 2.5vh;
-
-    }
-
-    .cargos {
-        font-size: 3vh;
-        padding: 0 4vh;
+        width: 60%;
+        min-width: 280px;
+        height: 35%;
     }
 
 
-    .containerInformacoes svg {
-        position: absolute;
-        bottom: 0;
+    .devFunctions {
+        font-size: 1.5rem;
     }
 
-    .imageEquipe {
-        width: 25vh;
+    .message {
+        font-size: 1rem;
+    }
+
+
+    .devPhoto {
+        width: 30vh;
+        height: auto;
+        border-radius: 100%;
+        border: solid 1vh;
     }
 
     .name {
-        font-size: 2.2rem;
+        padding-top: 1rem;
+        font-size: 1.8rem;
         text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+    .level {
+        height: 70px;
     }
 
 }
 
-@media (max-width: 700px) {
-    /* p{
-        font-size: 1rem;
-    } */
+@media screen and (max-width: 700px) {
 
+    .h2About {
+        font-size: 2.2rem;
+    }
+
+    .aboutAurora {
+        flex-direction: column;
+        gap: 3rem;
+
+    }
+
+    .aurora {
+        display: none;
+    }
+
+    .aurora2 {
+        width: 80%;
+        max-height: 80vh;
+        display: block;
+    }
+
+    .auroraContainerInformation {
+        order: 1;
+        width: 100%;
+    }
+
+    .loading,
+    .levelingUp {
+        max-width: 100%;
+
+    }
+
+    .gears {
+        width: 420px;
+        ;
+        margin: 1rem;
+    }
+
+    .gear1 {
+        width: 150px;
+        top: 20%;
+        left: 35%;
+    }
+
+    .gear2 {
+        width: 110px;
+        top: 70%;
+        left: 12%;
+    }
+
+    .gear3 {
+        width: 60px;
+        bottom: 0%;
+        left: 75%;
+    }
+
+    .gear4 {
+        width: 75px;
+        bottom: -25%;
+        left: 60%;
+    }
+
+    .gear5 {
+        width: 90px;
+        rotate: -5deg;
+        top: 0%;
+    }
+
+    .gear6 {
+        width: 45px;
+        top: 45%;
+        left: 15%;
+    }
+
+
+    .loadingBar {
+        margin-top: 1rem;
+        width: 350px;
+        height: 30px;
+    }
+
+    .level {
+        height: 60px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .h2About {
+        font-size: 2.2rem;
+    }
+
+    .level {
+        height: 40px;
+    }
+
+    .rowTeam {
+        height: 200vh;
+        width: 550px;
+    }
+
+    .devFunctions {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+
+    .gears {
+        width: 320px;
+        ;
+        margin: 1rem;
+    }
+
+    .gear1 {
+        width: 120px;
+        top: 20%;
+        left: 35%;
+    }
+
+    .gear2 {
+        width: 90px;
+        top: 65%;
+        left: 15%;
+    }
+
+    .gear3 {
+        width: 40px;
+        bottom: 15%;
+        left: 75%;
+    }
+
+    .gear4 {
+        width: 55px;
+        bottom: -2%;
+        left: 60%;
+    }
+
+    .gear5 {
+        width: 70px;
+        rotate: -5deg;
+        top: -7%;
+        right: 17%;
+    }
+
+    .gear6 {
+        width: 35px;
+        top: 52%;
+        left: 12%;
+    }
+
+
+    .loadingBar {
+        margin-top: 1rem;
+        width: 250px;
+        height: 30px;
+    }
+
+    .level {
+        height: 30px;
+    }
+
+    .rowTeam {
+        height: 200vh;
+        width: 300px;
+    }
+
+    .devPhoto {
+        width: 25vh;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    .h2About {
+        font-size: 2.2rem;
+    }
 }
