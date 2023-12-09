@@ -4,7 +4,7 @@ import BackGround from '@/app/components/backgroundLinearGradient.component/back
 export default function Sobre() {
 
     return (
-        <BackGround BackGround
+        <BackGround 
             mainContent={
                 <>
                     {/* Sobre nós */}

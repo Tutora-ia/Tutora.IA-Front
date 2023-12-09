@@ -1,9 +1,11 @@
-.container{
+
+.mainContainer{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin: 7%;
+  height: 100%;
+  width: 100%;
 }
 
 .containerTitle{
@@ -16,7 +18,7 @@
 
 .title{
   color: #fff;
-  font-size: 82px;
+  font-size: 4rem;
   font-weight: 700;
 }
 
@@ -26,38 +28,99 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 2rem;
 }
 
-.textoDuvidas{
-  margin: 90px;
-  padding: 20px 500px 20px 50px;
+.doubts{
+  width: 80%;
+  display: flex;
+  background-color: #fff;
+  border-radius: 40px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.inputDoubts{
+  padding: 1rem 0;
   border: none;
+  background-color: #fff;
   border-radius: 40px;
   color: #000;
-  font-size: 24px;
-  background-color: #fff;
+  font-size: 1.5rem;
+  width: 90%;
 }
 
-
-.textoDuvidas:focus{
+.inputDoubts:focus {
   outline: none;
 }
 
-.duvidas{
+.btnSearch{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.supportLinks{
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+  width: 82%;
+}
+
+.reportButton{
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .link{
-  font-size: 25px;
+  font-size: 1.3rem;
   font-weight: 500;
-  margin-left: 120px;
-  margin-right: 120px;
 }
 
-.purple{
-  color: #4B2395;
-}
+
 .link:hover{
   color: #4B2395;
+  
 }
+
+@media screen and (max-width: 800px){
+
+  .link{
+    font-size: 1rem;
+    width: auto;
+    text-align: center;
+  }
+
+  .title{
+    font-size: 3rem;
+  }
+
+  .inputDoubts{
+    font-size: 1.2rem;
+  }
+  
+}
+
+@media screen and (max-width: 600px){
+
+  
+  .title{
+    font-size: 2.2rem;
+  }
+
+  .supportLinks{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .inputDoubts{
+    font-size: 1rem;
+  }
+  
+}
+
+
