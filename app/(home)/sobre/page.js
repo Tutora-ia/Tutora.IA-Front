@@ -9,7 +9,7 @@ export default function Home() {
                 <>
                     {/* Sobre nós */}
                     <section section className={styles.aboutUs} >
-                        <h2 className={styles.h2}>SOBRE NÓS</h2>
+                        <h2 className={styles.h2About}>SOBRE NÓS</h2>
 
                         <img id={styles.logo} src="/Sobre/LogomarcaTutoraIA.svg" alt="Logo do Tutora.IA"></img>
                         <p className={styles.pAboutUs}>Tutora.ia é uma plataforma repleta de dinâmicas de ensino, dedicada a capacitar indivíduos a atingir todo o seu potencial linguístico. Nossa inteligência artificial produz um material de apoio fundamental, visando tornar a experiência de aprendizado não apenas envolvente, mas também     irresistivelmente atrativa.</p>
@@ -25,7 +25,8 @@ export default function Home() {
                     <section section className={styles.aboutAurora} >
                         <img className={styles.aurora} src="/Sobre/Aurora.svg" alt="" />
                         <div className={styles.auroraContainerInformation}>
-                            <h2 className={styles.h2}>QUEM É AURORA?</h2>
+                            <h2 className={styles.h2About}>QUEM É AURORA?</h2>
+                            <img className={styles.aurora2} src="/Sobre/Aurora.svg" alt="" />
                             <p>A escolha de nomear a IA como 'Aurora' foi inspirada na educadora Aurora Seles, simbolizando a iluminação do conhecimento. Essa decisão reflete a capacidade inspiradora da IA no ambiente educacional.</p>
                         </div>
 
@@ -36,7 +37,7 @@ export default function Home() {
                     {/* Carregando */}
 
                     <section className={styles.loading}>
-                        <h2>Atualizando...</h2>
+                        <h2 className={styles.h2About}>ATUALIZANDO...</h2>
                         <p>Expandiremos nossos conhecimentos para incluir história, matemática e inglês, proporcionando uma experiência ainda mais completa!</p>
                         <div className={styles.gears}>
                             <img className={`${styles.gear} ${styles.gear1}`} src='/Sobre/Engrenagem.svg'></img>
@@ -55,7 +56,7 @@ export default function Home() {
 
                     {/* Subimdo de Nível */}
                     <section className={styles.levelingUp}>
-                        <h2>Subindo de Nível</h2>
+                        <h2 className={styles.h2About}>SUBINDO DE NÍVEL</h2>
                         <img className={styles.level} src='/Sobre/NivelCapelo.png' alt=''></img>
                         <p>Além disso, estamos orgulhosos de apresentar nosso MVP (Most Valuable Player): um aplicativo mobile! Proporcionando acesso fácil e flexível a todo o conteúdo educacional!</p>
                     </section>
@@ -63,7 +64,7 @@ export default function Home() {
                     {/* Nosso Time */}
 
                     <section section className={styles.MeetOurTeam} >
-                        <h2 className={styles.h2}>CONHEÇA O NOSSO TIME</h2>
+                        <h2 className={styles.h2About}>CONHEÇA O NOSSO TIME</h2>
                         <div className={styles.rowTeam}>
 
                             {/* Beatriz */}
