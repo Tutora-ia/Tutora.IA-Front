@@ -9,11 +9,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 
-#logo {
+#logo{
     width: 50vw;
 }
 
@@ -22,9 +22,6 @@
     width: 80%;
 }
 
-.aboutUs .h2{
-    margin-top: 5rem;
-}
 
 /* Sobre a Aurora */
 
@@ -207,6 +204,7 @@
     height: 90%;
     display: flex;
     align-items: center;
+    border: none;
 }
 
 .containerInformation {
@@ -244,12 +242,13 @@
 .devMessage {
     height: 40%;
     width: 100%;
-    border: none;
+    border-radius: 1rem;
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .vector {
@@ -257,7 +256,7 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
+    width: 120%;
     height: 100%;
     z-index: 1;
     border-radius: 1rem;
@@ -269,7 +268,6 @@
     font-size: 1.2vw;
     z-index: 2;
 }
-
 
 
 .devPhoto {
@@ -365,91 +363,14 @@
     color: #0465B2;
 }
 
-@media (max-width: 1400px) {
-
-    #logo {
-        width: 70vw;
+@media screen and (max-with: 1000px) {
+    #logo{
+        width: 60vw;
     }
 
-    .sobreAurora {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .aurora {
-        margin-right: 0;
-
-    }
-
-    .auroraContainer h2 {
-        text-align: center;
-        font-size: 3rem;
-        padding: 10vh;
-    }
-
-    .auroraContainer p {
-        text-align: center;
-        padding: 0 10vh;
-    }
-
-}
-
-@media (max-width: 1000px) {
-
-    #logo {
-        padding: 5vh;
-    }
-
-    .fileira {
-        flex-direction: column;
-    }
-
-    .devContainer {
-        padding: 0 4vh 20vh 4vh;
-    }
-
-    /* Equipe Conatiner */
-    .containerInformacoes {
-        width: 50vh;
-        height: 80vh;
-
-    }
-
-    .mensagem {
-        position: absolute;
-        bottom: 10%;
-        padding: 0 4vh;
-        text-align: center;
-        font-size: 2.5vh;
-
-    }
-
-    .cargos {
-        font-size: 3vh;
-        padding: 0 4vh;
-    }
-
-
-    .containerInformacoes svg {
-        position: absolute;
-        bottom: 0;
-    }
-
-    .imageEquipe {
-        width: 25vh;
-    }
-
-    .name {
-        font-size: 2.2rem;
-        text-align: center;
-    }
-
-}
-
-@media (max-width: 700px) {
-    /* p{
+    .pAboutUs{
         font-size: 1rem;
-    } */
+    }
 
+    
 }

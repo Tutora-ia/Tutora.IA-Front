@@ -11,7 +11,7 @@ export default function Home() {
                     <section section className={styles.aboutUs} >
                         <h2 className={styles.h2}>SOBRE NÓS</h2>
 
-                        <img id="logo" src="/Sobre/LogomarcaTutoraIA.svg" alt="Logo do Tutora.IA" />
+                        <img id={styles.logo} src="/Sobre/LogomarcaTutoraIA.svg" alt="Logo do Tutora.IA"></img>
                         <p className={styles.pAboutUs}>Tutora.ia é uma plataforma repleta de dinâmicas de ensino, dedicada a capacitar indivíduos a atingir todo o seu potencial linguístico. Nossa inteligência artificial produz um material de apoio fundamental, visando tornar a experiência de aprendizado não apenas envolvente, mas também     irresistivelmente atrativa.</p>
                     </section >
                 </>
