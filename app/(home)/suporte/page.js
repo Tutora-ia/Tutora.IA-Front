@@ -2,35 +2,48 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import Link from 'next/link'
 import { exo, poppins } from '@/app/components/fonts.js'
-import search from './assets/search.svg'
-import ArrowBackButton from '@/app/components/arrowBackButton.component/arrowBackButton.jsx';
-
-
+import search from '@/public/Suporte/search.svg'
+import BackGround from '@/app/components/backgroundLinearGradient.component/backgroundLinearGradient.jsx'
 
 export default function Suporte() {
+
+  const displaySectionContentStyle = {
+    display: 'none',
+  };
+
   return (
-    <main className={styles.container}>
-      <div className={styles.containerTitle}>
-        <h1 className={`${styles.title} ${exo.className}`}>CENTRAL DE SUPORTE</h1>
-        <h3 className={`${styles.frase} ${poppins.className}`}>Estamos aqui por você</h3>
-      </div>
+    <BackGround
 
-      <div className={styles.duvidas}>
-        <input 
-          type="text" 
-          className={styles.textoDuvidas} 
-          placeholder="| Digite suas dúvidas aqui">               
-        </input>
-          <Image className={styles.btnSearch} alt="SearchButton" src={search} width='30' height='30'/>
-      </div> {/* end div duvidas */}
+      displaySectionContent={displaySectionContentStyle}
+      mainContent={
+        <main className={styles.mainContainer}>
+          <div className={styles.containerTitle}>
+            <h1 className={`${styles.title} ${exo.className}`}>CENTRAL DE AJUDA</h1>
+            <h3 className={`${styles.frase} ${poppins.className}`}>Estamos aqui por você</h3>
+          </div>
 
-      <div className="aba">
-          <Link className={`${styles.link}  ${poppins.className} `} href={'/'}> Denúncia </Link>
+          <form className={styles.doubts}>
+            <input
+              type="text"
+              className={styles.inputDoubts}
+              placeholder="| Digite suas dúvidas aqui">
+            </input>
+            <button className={styles.btnSearch} type='subimit'><Image alt="lupa de pesquisar" src={search} width='30' height='30' /></button>
+          </form>
 
-          <Link className={`${styles.link} ${poppins.className}`} href={'/'}> Enviar uma solicitação </Link>
+          <div className={styles.supportLinks}>
+            <Link className={`${styles.link} ${poppins.className}`} href={'/'}>Solicitar um atendimento</Link>
 
-          <Link className={`${styles.link} ${poppins.className}`} href={'/'}> Contato </Link>  
-      </div> {/*end aba */}
-    </main> //end main
+            <Link className={`${styles.link}  ${poppins.className} `} href={'/denuncia'}>
+              <div className={styles.reportButton}>Reportar Problema<img src='/Suporte/purpleBow.svg'></img></div>
+            </Link>
+
+          </div> 
+        </main> 
+      }
+
+      sectionContent={''}
+
+    />
   )
 }

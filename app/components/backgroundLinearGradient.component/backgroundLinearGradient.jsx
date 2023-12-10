@@ -1,7 +1,7 @@
 import React from 'react';
 import './backgroundLinearGradient.css'
 
-export default function backgroundLinearGradient({mainContent, sectionContent}) {
+export default function backgroundLinearGradient({mainContent, sectionContent, displaySectionContent}) {
 
     return (
         <>
@@ -10,7 +10,7 @@ export default function backgroundLinearGradient({mainContent, sectionContent}) 
                     {mainContent}
                 </div>
             </div>
-            <div className='background'>
+            <div className='background' style= {displaySectionContent}>
                     {sectionContent}
             </div>
         </>
