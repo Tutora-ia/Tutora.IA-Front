@@ -8,7 +8,7 @@ import './burguerMenu.css'
 
 
 
-const menuBtn = () => {
+const MenuBtn = () => {
     const [isListvisible, setIsListVisible] = useState(false);
 
 
@@ -70,4 +70,4 @@ const menuBtn = () => {
 
 
 
-export default menuBtn 
+export default MenuBtn 

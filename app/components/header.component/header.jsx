@@ -1,6 +1,3 @@
-"use client"
-
-import { exo } from '../fonts.js'
 import Image from 'next/image.js'
 import Menu from "@/app/components/burguerMenu/burguerMenu.jsx"
 import Link from 'next/link.js'
@@ -9,7 +6,7 @@ import './header.css'
 export default function Header() {
     return (
         <>
-            <header className={`cabecalho ${exo.className}`}>
+            <header className="cabecalho">
                 <div className="containerEsquerda">
                     <div className="containerImage">
                         <Image
@@ -30,14 +27,14 @@ export default function Header() {
                     </nav>
                 </div>
                 <div className="containerDireita">
-                    <div className="btnEntrar">
+                    <button className="btnEntrar">
                         <Link className="btnTexto" href="/login">Entrar</Link>
-                    </div>
-                    <div className="btnCadastrar">
+                    </button>
+                    <button className="btnCadastrar">
                         <Link className="btnTexto" href="/cadastro">Cadastre-se</Link>
-                    </div>
+                    </button>
                 </div>
-                <Menu></Menu>
+                <Menu />
             </header>
             <div className="linha" />
         </>
