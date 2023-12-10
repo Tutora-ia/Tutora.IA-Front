@@ -1,5 +1,5 @@
 'use client'
-
+import { useEffect } from 'react';
 import { useState } from 'react'
 import Image from 'next/image.js'
 import Menu from "./assets/Menu.svg"
@@ -11,10 +11,29 @@ import './burguerMenu.css'
 const menuBtn = () => {
     const [isListvisible, setIsListVisible] = useState(false);
 
+
     const menuBtnClicked = () => {
         setIsListVisible(!isListvisible);
     };
+
+    const linkClicked = () => {
+        setIsListVisible(!isListvisible);
+    };
+
+    const windowResized = () => {
+        if (isListvisible == true){
+            setIsListVisible(!isListvisible);
+        }
+    };
+
+    useEffect(()=>{
+        window.addEventListener('resize', windowResized);
+    })
+
+    
+
     return (
+        
         <>
             <div className='divBtn'>
                 <Image onClick={menuBtnClicked} className='menuBtn' src={Menu} alt="botão de menu"></Image>
@@ -28,13 +47,13 @@ const menuBtn = () => {
                         <ul>
                             <div className='listItensDiv'>
                                 <div>
-                                    <li><Link href="/">Home</Link></li>
-                                    <li><Link href="/sobre">Sobre</Link></li>
-                                    <li><Link href="/suporte">Suporte</Link></li>
+                                    <li onClick={linkClicked}><Link href="/">Home</Link></li>
+                                    <li><Link onClick={linkClicked} href="/sobre">Sobre</Link></li>
+                                    <li><Link onClick={linkClicked} href="/suporte">Suporte</Link></li>
                                 </div>
                                 <div>
-                                    <li><Link  href="/login">Entrar</Link></li>
-                                    <li><Link  href="/cadastro">Cadastre-se</Link></li>
+                                    <li><Link onClick={linkClicked} href="/login">Entrar</Link></li>
+                                    <li><Link onClick={linkClicked} href="/cadastro">Cadastre-se</Link></li>
                                 </div>
                             </div>
                         </ul>

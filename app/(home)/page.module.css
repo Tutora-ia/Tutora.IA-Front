@@ -1,530 +1,341 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700;800&family=Poppins:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* MAIN */
+.mainContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 9vw;
+}
+
+.h2Home{
+  text-transform: uppercase;
+}
+
+.aurora {
+  height: 100%;
+}
+
+.mainContainerLeft{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.logoAndDescription{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.logo {
+  width: 80%;
+}
+
+.mainDescription {
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+.auroraMainLeft {
+  display: none;
+}
+
+/* BUTTON SETTINGS  */
+
+.buttons{
+  width: 80%;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.btn {
+  background: #4B2395;
+  border-radius: 10px;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  width: 100%; 
+}
+
+.btn h2{
+  font-size: 2rem;
+}
+
+.btn:hover {
+  background: #ffffff;
+  color: #4B2395;
+}
+
+.btn2 {
+  background: transparent;
+  border: solid 3px #4B2395;
+}
+
+.btn2:hover {
+  background: #4B2395;
+  color: #ffffff;
+}
 
 
-.container {
-    background: linear-gradient(135deg, #101017, #170C2F, #2B1453, #49228E, #7A218E,  #49228E, #2B1453, #170C2F, #101017);
-  }
-  /* .navbar {
-    
-  } */
-  .mask {
-    height: 100vh;
-    background-color: #000;
-    background-size: cover;
-    opacity: 0.8;
-  }
-  
-  .main {
-    margin-top: 7.5vw;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .logoDescription {
-    display: flex;
-    flex-direction: column;
-    gap: 0.7vw;
-  }
+/* OTHER SECTIONS  */
+.sectionContentDiv{
+  padding: 0 9vw;
+  width: 100%;
+  height: 100%;
+}
 
-  .logo{
-    margin-top: 5vw;
-    width: 30vw;
-  }
-  
-  /* TITTLE, SUB TITTLE AND DESCRIPTION */
-  .title,
-  .description,
-  .subTitle{
-    margin-left: 9.5vw;
-    text-align: left;
-    margin-bottom: 2.2vw;
-    font-weight: 900;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .subTitle {
-    color: #fff;
-    font-size: 1.7em;
-    margin-bottom: 0.7vw;
-  }
-  .description {
-    color: #fff;
-    font-size: 1.9vw;
-  }
-  
-  /* BUTTON SETTINGS  */
-  .btn {
-    margin-left: 8.8vw;
-  }
-  
-  .btn button{
-    background: #4B2395;
-    border-color: #4B2395;
-    border-radius: 0.65vw;
-    margin: 1.09vw;
-    box-shadow: none;
-    border-style: solid;
-    cursor: pointer;
-  }
-  
-  .btn a{
-    color: #fff;
-    font-size: 1.313em;
-    font-family: 'Exo 2', sans-serif;
-  }
-  
-  .btn button:hover{
-      background: #4B2395;
-  }
-  .btn a h2{
-    padding: 1.02vw 16vw;
-  }
-  
-  .btn .btn2 {
-    background: transparent;
-    border-color: #4B2395;
-    border-radius: 0.65vw;
-    margin: 1.1vw;
-  }
-  .btn .btn2 a h2{
-    padding: 1.02vw 18.7vw;
-  }
-  
-
-  /* IMAGE AURORA  */
-  .aurora{
-    width: 20%;
-    position: absolute;
-    right: 10vw;
-    top: 9.05vw;
-  }
-  
-    .containerTwo,
-    .containerThree,
-    .containerFour,
-    .containerFive{
-      background: #111118;
-    }
-  
-    .containerTwo h1,
-    .containerThree h1,
-    .containerFour h1,
-    .containerFive h1{
-      color: #d9d9d9;
-      font-size: 5rem;
-      text-align: center;
-      margin: 4.8vw;
-      font-family: 'Exo 2', sans-serif;
-      font-weight: 700;
-    }
-  
-  /* container two or section two */
-  .containerTwo p{
-    color: #fafafa;
-    font-family: 'Poppins', sans-serif; 
-    font-weight: 200;
-    font-size: 1.8vw;
-    text-align: center;
-    margin: 4.8vw;
-  }
-  
-  .containerTwo section{
-    display: grid;
-    grid-template-columns: 22vw 22vw 22vw;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2.8%;
-  }
-  .containerTwo .icon{
-    margin: 3.3vw;
-    display: inline-block;
-  
-  }
-  
-  .containerTwo h2{
-    font-size: 1.25em;
-    text-align: center;
-    color: #fff;
-    font-weight: 300;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  /* container three */
-  .containerThree section{
-    display: grid;
-    grid-template-columns: 22vw 22vw;
-  }
-  .containerThree h2{
-    color: #fff;
-    font-size: 1.875vw;
-    width: 36.6vw;
-    margin-left: 42.2vw;
-    margin-top: 3.6vw;
-    margin-right: 8.05vw;
-    text-align: left;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    }
-
-  .containerThree p{
-    color: #fff;
-    font-size: 1.4vw;
-    width: 36.7vw;
-    margin: 8.7vw;
-    margin-left: 26vw;
-    text-align: right;
-    margin-top: 0.7vw;
-    font-weight: 200;
-    font-family: 'Poppins', sans-serif;
-  }
-   .ia{
-    margin-top: 0.7vw;
-    margin-left: 14vw;
-  }
-  .containerThree .apprenticeship h2{
-    margin: 8.8vw;
-    margin-top: 3.7vw;
-    margin-bottom: 0px;
-    margin-left: 14vw;
-  }
-  .containerThree .apprenticeship p{
-    margin: 8.8vw;
-    margin-top: 0.7vw;
-    text-align: left;
-    margin-left: 14vw;
-  }
-  .learning{
-    margin-left: 40vw;
-  }
-  
-  /* container four */
-  .containerFour h2{
-    font-size: 2.8rem;
-    background: -webkit-linear-gradient(to left, #A3218E, #4B2395, #06EFFF);
-    background: linear-gradient(to left, #A3218E, #4B2395, #06EFFF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    margin: 7.3vw;
-    font-weight: 700;
-    font-family: 'Exo 2', sans-serif;
-  }
-  
-  .containerFour section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-   .containerFree{
-    width: auto;
-    background-color: #D9D9D9;
-    border: none;
-    height: 70.8vh;
-    margin: 4.8vw;
-    }
-    .free{
-      height: auto;
-    }
-  
-  .containerFour  p{
-    font-family: 'Poppins', sans-serif;
-    color: #000000;
-    font-size: 0.938em;
-    margin: 0.7vw 2.1vw 0vw 2.1vw;
-    font-weight: 200;
-  }
-  
-  .containerFour h3{
-    font-family: 'Exo 2', sans-serif;
-    color: #A3218E;
-    text-align: center;
-    margin: 1.5vw 0.7vw 1.5vw 0.7vw;
-  }
-  
-  .containerFour .containerMonthly{
-    height: auto;
-  }
-  
-  .containerMonthly h3{
-    font-family: 'Exo 2', sans-serif;
-    color: #fff;
-    background-color: #4B2395;
-    padding: 1.5vw 0.7vw 1.5vw 0.7vw;
-    margin: 0vw;
-  }
-  
-  .containerMonthly h4,
-  .containerYear h4{
-    font-size: 2rem;
-    font-family: 'Poppins', sans-serif;
-    color: #000;
-    margin: 0.7vw 2.1vw 2.9vw 2.1vw;
-    font-weight: 400;
-  }
-  .containerMonthly span,
-  .containerYear span{
-    font-size: 0.9rem;
-  }
-  .containerFour .containerYear{
-    height: auto;
-  }
-  .containerFour .subtitleplans{
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    color:#A3218E;
-    margin-bottom: 2.1vw;
-  }
-  .containerFour .btnFour{
-    font-family: 'Exo 2', sans-serif;
-    border: 2px solid #ad2496;
-    font-weight: bold;
-    font-size: 0.938em;
-    background-color: #D9D9D9;
-    color: #A3218E;
-    border-radius: 0.3vw;
-    cursor: pointer;
-    margin: 1.2vw;
-    margin-top: 4.4vw;
-    padding: 0.7vw 5vw;
-  }
-  
-  .containerFour .monthly{
-    color: #fff;
-    background-color: #4B2395;
-    border: 2px solid #4B2395;
-    margin-left: 1.09vw;
-    margin-top: 1.2vw;
-  }
-  
-  .containerYear h3{
-    color: #fff;
-    background-color: #3958B1;
-    padding: 1.4vw 0.7vw 1.4vw 0.7vw;
-    margin: 0vw;
-  }
-  .containerFour .year{
-    color: #fff;
-    background-color: #3958B1;
-    border: 2px solid #3958B1;
-    margin-left: 1.09vw;
-    margin-top: 1.2vw;
-  }
-  .containerFive .videoContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%; 
-    max-height: 100%;
-    margin: 7.3vw;
-    pointer-events: none;
-  }
-   .containerFive h1{
-    margin: 8.7vw;
-   }
-  
-    
-  /* RESPONSIVE SETTINGS */
-  
-  @media screen and (max-width: 500px){
-    /* container */
-    .mask{
-      display: inline-block;
-      width: 100vw;
-    }
-    /* BUTTON RESPONSIVE  */
-    .logo{
-      margin-top: 25vw;
-      width: 55vw;
-      height: 15vw;
-    }
-    .description{
-      margin: 10vw;
-      font-size: 0.8em;
-      margin-top: 20vw;
-    }
-  
-    .btn a{
-      font-size: 0.75em;
-    }
-
-    .btn a h2{
-      padding: 3vw 25vw;
-    }
-    .btn .btn2 a h2{
-      padding: 3vw 31.5vw;
-    }
-    .aurora{
-      top: 32vw;
-    }
-      .containerTwo h1,
-      .containerThree h1,
-      .containerFour h1,
-      .containerFive h1{
-        font-size: 2.0rem;
-        margin: 2.1vw;
-      }
-  
-    /* container two or section two */
-    .containerTwo p{
-      font-size: 0.9rem;
-      margin-top: 5vw;
-    }
-  
-    .containerTwo section{
-      grid-template-columns: 30.4vw 30.4vw;
-      margin-top: 2.8%;
-      margin-bottom: 7.3vw;
-    }
-    
-    .icon{
-      width: 25vw;
-      margin-bottom: 5.8vw;
-    }
-    .containerTwo .icon{
-      margin: 3.2vw;
-    }
-    
-    .containerTwo h2{
-      font-size: 0.625em;
-      font-weight: 300;
-      margin-top: -18vw;
-    }
-    
-    /*container three */
-    .containerThree section{
-      grid-template-columns: 0vw;
-      align-items: center;
-    }
-    .containerThree h2{
-      width: 80vw;
-      margin-left: 20vw;
-    }
-    .containerThree p{
-      width: 80vw;
-      text-align: center;
-      margin-left: 10vw;
-      margin-top: 0.7vw;
-      margin-bottom: 1vw;
-      font-size: 0.688em;
-    }
-  
-    .containerThree .intelegence h2{
-      font-size: 1.188em;
-    }
-  
-  
-    .ia,
-    .learning{
-      width: auto;
-      height: auto;
-      margin-left: 28vw;
-      margin-top: 0;
-    }
-    
-    .containerThree .apprenticeship h2{
-      font-size: 1.188em;
-      margin-left: 12vw;
-      text-align: center;
-    }
-
-    .learning{
-      grid-row: 1;
-    }
-
-    /* container four */
-    .containerFour h2{
-      font-size: 1.188em;
-    }
-  
-    .containerFour section{
-      flex-direction: column;
-      gap: 2vw;
-    }
-    .containerFour .containerFree{
-      width: 100vw;
-      text-align: center;
-      height: auto;
-    }
+.line{
+  margin: 7vw 0;
+  border: solid 2px #5252525c;
+}
 
 
-    .containerFour .containerFree p{
-      font-size: 0.888em;
-      width: 80vw;
-      margin-left: 10vw;
-    }
+/* GAME */
+.gamifyingContent{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 5rem;
+}
 
-    .containerFour .titleMonthly{
-      padding: 10vw;
-    }
+.iconsSection{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-    .containerFour .titleYear{
-      padding: 10vw;
-    }
+.rowIcons{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+}
 
-    .containerFour .btnFour{
-      padding: 5vw 10vw;
-      margin-top: 5vw;
-      border-radius: 5px;
-    }
-  /* container five */
-    .containerFive video{
-      width: 100vw;
-      margin-bottom: -50vw;
-      overflow: hidden;
-    }
-    .containerFive h1{
-      margin-bottom: -50vw;
-    }
-  }/*  end media screen */
+.iconsSection img{
+  width: 200px;
+}
 
-  @media screen and (max-width: 1083px) and (min-width: 799px){
-     .btn .btn2 a h2{
-        padding: 1vw 19.5vw;
-      }
+.rowIcons h2{
+  font-size: 1.8rem;
+  font-family: 'Exo 2', sans-serif;
+}
 
-      .aurora{
-        top: 13vw;
-      }
-      
-      .containerTwo .icon{
-        width: 15vw;
-      }
+.rowIcons div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
 
-  }
+/* DISTINCTIVE QUALITIES */
 
-  @media screen and (max-width: 798px) and (min-width: 501px){
-    .logo{
-      margin-top: 15vw;
-      height: 9vw;
-    }
+.ourDistinctiveQualities{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 6rem;
+  width: 100%;}
 
-    .btn .btn2 a h2{
-      padding: 1vw 20.5vw;
-    }
+.iaSection, .expandingYourLearning{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: space-between;
+}
 
-    .aurora{
-      top: 22vw;
-    }
-    
-    .containerTwo .icon{
-      width: 15vw;
-    
-    }
+.iaInformation, .expandingInformation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 
-    .ia{
-      width: 30vw;
-      height: 30vw;
-    }
+.iaInformation{
+  text-align: end;
+}
 
-    .learning{
-      width: 30vw;
-      height: 30vw;
-    }
-    .containerFive video{
-      width: 100vw;
-      margin: 10vw;
-    }
+.ia{
+  margin-right: 8rem;
+  width: 60vh;
+}
+.learning{
+  margin-left: 8rem;
+  width: 60vh;
+}
 
-  }
+/* PLANES */
+
+.planesSection{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+}
+
+.planesSection h3{
+  font-size: 2rem;
+  background: -webkit-linear-gradient(to left, #A3218E, #4B2395, #06EFFF);
+  background: linear-gradient(to left, #A3218E, #4B2395, #06EFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.planesList{
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerFree, .containerPremiumMonthly, .containerPremiumYear{
+  height: 100%;
+  min-height: 400px;
+  width: 30%;
+  background-color: #D9D9D9;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  color: #000;
+  position: relative;
+
+}
+
+.planesSection h4, .planesSection h5{
+  font-family: 'Exo 2', sans-serif;
+}
+
+.titleFreePlan{
+  font-size: 1.5rem;
+  color: #A3218E;
+}
+
+.subtitleFreePlan{
+  font-size: 1.2rem;
+  color: #A3218E;
+  
+}
+
+.containerFree li, .containerPremiumMonthly li, .containerPremiumYear li{
+  list-style: none;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  font-size: .9rem;
+}
+
+.freeBtn{
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #A3218E;
+  border-radius: 5px;
+  color: #A3218E;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.freeBtn:hover{
+  background-color: #A3218E;
+  color: #fff ;
+}
+
+.premiumMonthlyTitle, .premiumYearTitle{
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: #4B2395;
+  padding: 1.8rem;
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  top: 0;
+}
+
+.priceMonthly{
+  margin-top: 5rem;
+  color:#4B2395;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.priceMonthly span, .priceYear span{
+  font-size: 1.4rem;
+}
+
+.premiumMounthlyBtn{
+  width: 100%;
+  background-color: #4B2395;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid #4B2395;
+}
+
+.premiumMounthlyBtn:hover{
+  background-color: #fff;
+  color: #4B2395 ;
+  
+}
+
+
+.premiumYearTitle{
+  background-color: #3958B1;
+}
+
+.priceYear{
+  margin-top: 5rem;
+  color: #3958B1;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.premiumYearBtn{
+  width: 100%;
+  background-color: #3958B1;
+  border: 2px solid #3958B1;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  
+}
+
+.premiumYearBtn:hover{
+  background-color: #fff;
+  color: #3958B1 ;
+}
+
+
+
+
+
+
+
+
+
+

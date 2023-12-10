@@ -18,7 +18,7 @@ export default function Suporte() {
       mainContent={
         <main className={styles.mainContainer}>
           <div className={styles.containerTitle}>
-            <h1 className={`${styles.title} ${exo.className}`}>CENTRAL DE AJUDA</h1>
+            <h2 className={styles.title}>CENTRAL DE AJUDA</h2>
             <h3 className={`${styles.frase} ${poppins.className}`}>Estamos aqui por você</h3>
           </div>
 

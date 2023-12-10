@@ -23,7 +23,8 @@ export default function Header() {
                     <nav className='navBar'>
                         <ul>
                             <li><Link className="navBarLink" href="/">Home</Link></li>
-                            <li><Link className="navBarLink" href="/sobre">Sobre</Link></li>
+                            <li><Link className="navBarLink" href="/#planes">Planos</Link></li>
+                            <li><Link className="navBarLink" href="/sobre/">Sobre</Link></li>
                             <li><Link className="navBarLink" href="/suporte">Suporte</Link></li>
                         </ul>
                     </nav>
