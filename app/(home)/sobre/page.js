@@ -12,7 +12,7 @@ export default function Sobre() {
                         <h2 className={styles.h2About}>SOBRE NÓS</h2>
 
                         <img id={styles.logo} src="/Sobre/LogomarcaTutoraIA.svg" alt="Logo do Tutora.IA"></img>
-                        <p className={styles.pAboutUs}>Tutora.ia é uma plataforma repleta de dinâmicas de ensino, dedicada a capacitar indivíduos a atingir todo o seu potencial linguístico. Nossa inteligência artificial produz um material de apoio fundamental, visando tornar a experiência de aprendizado não apenas envolvente, mas também     irresistivelmente atrativa.</p>
+                        <p className={styles.pAboutUs}>Somos a Tutora.IA! A única plataforma dinâmica de ensino da língua portuguesa que utiliza gamificação e outras diversas metodologias de ensino! Nossa inteligência artificial produz um material de apoio fundamental para tornar a sua experiência de aprendizado irresistivelmente atrativa.</p>
                     </section >
                 </>
 
