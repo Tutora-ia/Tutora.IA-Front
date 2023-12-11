@@ -48,6 +48,7 @@ const MenuBtn = () => {
                             <div className='listItensDiv'>
                                 <div>
                                     <li onClick={linkClicked}><Link href="/">Home</Link></li>
+                                    <li onClick={linkClicked}><Link href="/#planes">Planos</Link></li>
                                     <li><Link onClick={linkClicked} href="/sobre">Sobre</Link></li>
                                     <li><Link onClick={linkClicked} href="/suporte">Suporte</Link></li>
                                 </div>

@@ -14,7 +14,8 @@ export default function Home() {
             <div className={styles.logoAndDescription}>
 
               <img
-                className={styles.logo}
+                id='logoPosition'
+                className={`${styles.logo} `}
                 src={'/Home/logo.svg'}
                 alt='Logo da Tutora.IA'></img>
 
@@ -32,15 +33,15 @@ export default function Home() {
             ></img>
 
             {/* buttons register and login */}
-            <div className={styles.buttons}>
+            <div  className={styles.buttons}>
 
-              <button type='button' className={styles.btn}>
+              <button id='btnCadastro' type='button' className={styles.btn}>
                 <Link href="/cadastro">
                   <h2>CADASTRAR</h2>
                 </Link>
               </button>
 
-              <button type='button' className={`${styles.btn} ${styles.btn2}`}>
+              <button id='btnLogin' type='button' className={`${styles.btn} ${styles.btn2}`}>
                 <Link href="/login">
                   <h2>ENTRAR</h2>
                 </Link>
@@ -48,6 +49,7 @@ export default function Home() {
 
             </div>
           </div>
+
 
           {/* AURORA */}
           <img
@@ -65,9 +67,9 @@ export default function Home() {
       sectionContent=
       {
         <div className={styles.sectionContentDiv}>
+
           {/* GAMIFYING */}
           <section className={`${styles.gamifyingContent} `}>
-            {/* content two */}
             <h2 className={styles.h2Home}>Gamificando seu aprendizado</h2>
             <p>
               Pronto para se aventurar em uma jornada gamificada que revolucionará a maneira como as
@@ -171,7 +173,7 @@ export default function Home() {
 
               <section className={styles.expandingYourLearning}>
                 <div className={styles.expandingInformation}>
-                  <h2>Expandindo seu aprendizado</h2>
+                  <h2>Expandindo seus conhecimento</h2>
                   <p>
                     Por meio de diversas estratégias, impulsionamos a evolução, sem ficar restritos a soluções únicas, adaptando-nos para aprimorar a experiência de aprendizado no "game" da educação.
                   </p>
@@ -187,14 +189,15 @@ export default function Home() {
             </div>
           </section>
 
+
           <hr id="planes" className={styles.line}></hr>
 
           {/* PLANES */}
 
-          <section  className={styles.planesSection}>
+          <section className={styles.planesSection}>
             <h2 className={styles.h2Home}>PLANOS</h2>
 
-            <h3>
+            <h3 >
               Faça um upgrade no seu aprendizado! Escolha seu
               plano ideal para um futuro mais que perfeito.
             </h3>
@@ -209,11 +212,11 @@ export default function Home() {
                 <h5 className={styles.subtitleFreePlan}>Funcionalidades gratuitas</h5>
 
                 <ul>
-                <li>Trilha de aprendizado</li>
-                <li>Desafio Enem</li>
-                <li>1 redação por semana e 2 treinos de redação</li>
-                <li>10 perguntas diárias para a IA</li>
-                <li>Missões diárias e desafios </li>
+                  <li>Trilha de aprendizado</li>
+                  <li>Desafio Enem</li>
+                  <li>1 redação por semana e 2 treinos de redação</li>
+                  <li>10 perguntas diárias para a IA</li>
+                  <li>Missões diárias e desafios </li>
                 </ul>
 
                 <button type="button" className={styles.freeBtn} ><Link href="#">
@@ -226,11 +229,11 @@ export default function Home() {
 
                 <h5 className={styles.priceMonthly}>R$14,99<span>/por mês</span></h5>
                 <ul>
-                <li>Correções ilimitadas de redações </li>
-                <li>Conversas ilimitadas com a IA Aurora</li>
-                <li>Trilha de estudos Personalizada  </li>
-                <li>Novos modelos de avaliação </li>
-                <li>Correção, criação e explicação de exercícios ilimitadas</li>
+                  <li>Correções ilimitadas de redações </li>
+                  <li>Conversas ilimitadas com a IA Aurora</li>
+                  <li>Trilha de estudos Personalizada  </li>
+                  <li>Novos modelos de avaliação </li>
+                  <li>Correção, criação e explicação de exercícios ilimitadas</li>
                 </ul>
 
                 <button type="button" className={styles.premiumMounthlyBtn} ><Link href="X">
@@ -242,15 +245,15 @@ export default function Home() {
               <div className={styles.containerPremiumYear}>
                 <h4 className={styles.premiumYearTitle}>PREMIUM ANUAL</h4>
 
-                <h5 className={styles.priceYear}>R$125,99<span>/por mês</span></h5>
-                
+                <h5 className={styles.priceYear}>R$10,50<span>/por mês</span></h5>
+
                 <ul>
-                <li>Correção de redações limitada à 1 vez ao mês</li>
-                <li>Tirar dúvidas com a IA Tutora, limitado a 5 perguntas diárias</li>
-                <li>Missões e objetivos </li>
-                <li>Trilha de estudos Personalizada </li>
-                <li>Correção e explicação de exercícios</li>
-                <li>Melhor custo benefício a longo prazo</li>
+                  <li>Correção de redações limitada à 1 vez ao mês</li>
+                  <li>Tirar dúvidas com a IA Tutora, limitado a 5 perguntas diárias</li>
+                  <li>Missões e objetivos </li>
+                  <li>Trilha de estudos Personalizada </li>
+                  <li>Correção e explicação de exercícios</li>
+                  <li>Melhor custo benefício a longo prazo</li>
                 </ul>
 
                 <button type="button" className={styles.premiumYearBtn} ><Link href="X">

@@ -14,7 +14,8 @@ const ArrowBackButton = () => {
   };
   return (
     <div className='arrowBackButtonDiv' onClick={routerBack}>
-      <Image className='arrow' src={Arrow} width={38} height={30} alt="Botão de Voltar" /></div>
+      <Image className='arrow' src={Arrow} width={38} height={30} alt="Botão de Voltar" />
+      </div>
   );
 };
 
