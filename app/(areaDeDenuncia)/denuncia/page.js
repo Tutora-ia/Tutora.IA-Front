@@ -117,7 +117,7 @@ export default function Home() {
 
                                 listItem2={
                                     <div className={Styles.whiteBox}>
-                                        <Link href='https://atendelibras.mdh.gov.br/acesso'>Se precisar de ajuda, inicie uma conversa em libras com pessoas especializadas.</Link>
+                                        <Link href='https://atendelibras.mdh.gov.br/acesso'>Se precisar de ajuda, inicie uma conversa em libras com pessoas especializadas clicando aqui.</Link>
                                     </div>}>
 
                             </ListItens>
