@@ -1,18 +1,15 @@
 import React from 'react';
 import './backgroundLinearGradient.css'
 
-export default function backgroundLinearGradient({mainContent, sectionContent, displaySectionContent}) {
+export default function backgroundLinearGradient({children, heightBackground}) {
 
     return (
-        <>
-            <div className='mainBackground'>
-                <div className='mask'>
-                    {mainContent}
+        <div className='mainBackgroundColor'>
+            <div style={{ height: `${heightBackground}` }} className='mainBackground'>
+                <div style={{ height: `${heightBackground}` }} className='mask'>
+                    {children}
                 </div>
             </div>
-            <div className='background' style= {displaySectionContent}>
-                    {sectionContent}
-            </div>
-        </>
+        </div>
     )
 }

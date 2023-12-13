@@ -19,11 +19,15 @@ export default function Home() {
 
             <div className={styles.carrosselContainer} >
               <div className={styles.rowContainer}>
-                <Link href={'/areaTreinamento/sabeMuito'}><img className={styles.sabeMuito} src='/AreaTreinamento/sabeMuito.png'>
+                <Link href={'/areaTreinamento/sabeMuito'}><img className={styles.sabeMuito} src='/AreaTreinamento/SabeMuito.png'>
                 </img></Link>
-                <img className={styles.letris} src='/AreaTreinamento/Letris2.png'>
+                <img className={styles.letris} src='/AreaTreinamento/Letris.png'>
                 </img>
-                <img className={styles.forca} src='/AreaTreinamento/forca.png'>
+                <img className={styles.forca} src='/AreaTreinamento/5Erros.png'>
+                </img>
+                <img className={styles.forca} src='/AreaTreinamento/Stop.png'>
+                </img>
+                <img className={styles.forca} src='/AreaTreinamento/Cruzar.png'>
                 </img>
 
               </div>

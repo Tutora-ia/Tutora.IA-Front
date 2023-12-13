@@ -3,11 +3,13 @@ import Link from 'next/link'
 import styles from './page.module.css'
 import GoogleIcon from '../assets/google.svg'
 import ArrowBackButton from '@/app/components/arrowBackButton.component/arrowBackButton'
+import Background from '@/app/components/backgroundWithColoredCircles.component/backgroundWithColoredCircles.jsx'
+
 
 export default function Login() {
 
     return (
-        <div className={styles.backgroundLogin}>
+        <Background heightContainer='100vh' circleColor='#6C33D7'>
             <div className={styles.ArrowBackButton}>
                 <ArrowBackButton/>
             </div>
@@ -17,7 +19,7 @@ export default function Login() {
             </div>
 
             <div className={styles.wrapper}>
-                <div className={styles.circle}></div>
+               
                 <form className={styles.form} action="">
                     <h1>Login</h1>
                     <div className={styles.icon}>
@@ -75,6 +77,6 @@ export default function Login() {
                     </Link>
                 </button>
             </div>
-        </div>
+        </Background>
     )
 }

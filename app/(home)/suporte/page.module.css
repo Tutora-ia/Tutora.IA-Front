@@ -6,7 +6,10 @@
   align-items: center;
   height: 100%;
   width: 100%;
+  gap: 5rem;
+  padding: 1rem;
 }
+
 
 .containerTitle{
   display: flex;
@@ -21,6 +24,7 @@
   font-size: 4rem;
   font-weight: 700;
 }
+
 
 .frase{
   background: -webkit-linear-gradient(to left, #A3218E, #4B2395, #06EFFF);

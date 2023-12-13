@@ -3,12 +3,12 @@ import Link from 'next/link'
 import styles from './page.module.css'
 import GoogleIcon from '../assets/google.svg'
 import ArrowBackButton from '@/app/components/arrowBackButton.component/arrowBackButton'
-import BackgroundLogin from '@/app/components/backgroundWithPurpleCircles.component/backgroundWithPurpleCircles.jsx'
+import BackgroundLogin from '@/app/components/backgroundWithColoredCircles.component/backgroundWithColoredCircles.jsx'
 
 export default function Cadastro() {
 
     return (
-        <BackgroundLogin>
+        <BackgroundLogin heightContainer='100vh' circleColor='#6C33D7'>
             <>
                 <div className={styles.ArrowBackButton}>
                     <ArrowBackButton />

@@ -36,14 +36,14 @@ margin-bottom: 2rem;
 }
 
 .carrosselContainer{
-   width: 900px;
+   width: 1000px;
    overflow-y: hidden;
    white-space: nowrap;
 }
 
 .rowContainer{
   display: flex;
-  gap:3rem;
+  gap:2rem;
   transition: transform 0.5s ease;
 }
 
