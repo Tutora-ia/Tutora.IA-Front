@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
-import GoogleIcon from '../assets/google.svg'
+import GoogleIcon from '@/app/Assets/logon/google.svg'
 import ArrowBackButton from '@/app/components/arrowBackButton.component/arrowBackButton'
 
 

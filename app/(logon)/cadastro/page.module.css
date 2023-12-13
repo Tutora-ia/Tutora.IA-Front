@@ -26,6 +26,7 @@
     padding: 30px 40px;
 }
 
+
 .container h1{
     color: #6C33D7;
     font-size: 3rem;
@@ -39,6 +40,17 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.form .inputError, .form .inputError::placeholder {
+    color: rgb(255, 72, 72);
+    outline: 1px solid rgb(255, 72, 72);
+  }
+
+.form .errorMessage {
+    color: rgb(255, 72, 72);
+    font-size: 0.75rem;
+    margin-top: 8px;
 }
 
 .icon{
