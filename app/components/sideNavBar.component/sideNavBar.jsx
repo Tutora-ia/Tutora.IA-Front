@@ -24,7 +24,7 @@ export default function SideNavBar() {
 
         </div>
         <div className="navIcon">
-          <Link className="Links" href="/">
+          <Link className="Links" href="/modulos">
             <Image
               src={Trilha}
               alt="Icone Trilha"
@@ -60,7 +60,7 @@ export default function SideNavBar() {
             />
           </Link>
 
-          <Link className="Links" href="/">
+          <Link className="Links" href="/redacao">
             <Image
               src={Redacao}
               alt="Icone Redacao"
@@ -71,7 +71,7 @@ export default function SideNavBar() {
         </div>
       </div>
       <div className="perfil">
-        <Link className="Links" href="/">
+        <Link className="Links" href="/perfil">
           <Image
             src={Perfil}
             alt="Icone Perfil"

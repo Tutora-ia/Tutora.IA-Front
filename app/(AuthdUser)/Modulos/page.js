@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import Link from 'next/link'
+import ProgressBar from '@/app/components/progressBar.component/ProgressBar'
 
 
 export default function Home() {
@@ -12,16 +14,16 @@ export default function Home() {
             <div className={styles.containerPhase}>
               <section>
                 <button class={`${styles.button} ${styles.accentuation}`}>
-
-                  <h1>Acentuação</h1>
-                  <div className={styles.mortarboard}><Image
-                    src='/Modulos/capeloTrilha.svg'
-                    width="100"
-                    height="100"
-                    alt=''
-                  />
-                  </div>
-
+                  <Link href={'/modulos/trilha'}>
+                    <h1>Acentuação</h1>
+                    <div className={styles.mortarboard}><Image
+                      src='/Modulos/capeloTrilha.svg'
+                      width="100"
+                      height="100"
+                      alt=''
+                    />
+                    </div>
+                  </Link>
                 </button>
                 <button class={`${styles.button} ${styles.adverb}`}>
                   <div className={styles.lock}><Image
@@ -90,18 +92,7 @@ export default function Home() {
                 />
               </button>
 
-              <div className={styles.level}>
-                <Image
-                  className={styles.logo}
-                  src='/Modulos/Union (1).svg'
-                  width="90"
-                  height="60"
-                  alt=''
-                />
-                <h4> Iniciante </h4>
-                <h5>1</h5>
-                <p>0%</p>
-              </div>
+              {/* <ProgressBar /> */}
 
 
             </div>{/* end containerPhase*/}

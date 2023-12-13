@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Poppins:wght@300;400&display=swap');
+
+.contentContainer{
+    background: #241f43;
+    border-radius: 40px;
+    position: fixed;
+    display: flex;
+    width: 85vw;
+    height: 87vh;
+    padding: 0px 46px;
+    padding-top: 41px;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.contentEsquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+    width: 60%;
+}
+
+.containerCima {
+    max-width: 100%;
+    height: 250px;
+    background: #a3218e;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 5px 40px 5px 20px;
+}
+
+.infoEsquerda {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.infoEsquerda h3 {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Exo 2', sans-serif;
+    margin-bottom: 5%;
+}
+
+.infoEsquerda p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.date {
+    display: flex;
+    gap: 5px
+}
+
+
+.infoDireita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.configButton {
+    position: absolute;
+    right: 520px;
+    top: 165px;
+    display: block;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.missoesUsuario{
+    max-width: 100%;
+    background: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #000;
+    border-radius: 20px;
+    height: 100%;
+    margin-bottom: 5%;
+    padding: 20px 0;
+}
+
+.missaoDia {
+    width: 80%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    border: #a3218e solid 5px;
+}
+
+.missaoDia h3 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.missaoDia p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.conquistas {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    border: #a3218e solid 5px;
+}
+
+.conquistas h3 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.conquistas p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.conquistas button {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background: #a3218e;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.auroraContainer{
+    position: absolute;
+    bottom: 0px;
+    right: 120px;
+}

@@ -14,6 +14,11 @@
     overflow-y: auto;
 }
 
+.contentContainer::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+  }
+
 .containerTop {
     display: flex;
     justify-content: space-between;
