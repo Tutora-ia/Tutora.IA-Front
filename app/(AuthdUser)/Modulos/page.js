@@ -3,7 +3,6 @@ import styles from './page.module.css'
 import Link from 'next/link'
 import ProgressBar from '@/app/components/progressBar.component/ProgressBar'
 
-
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -34,7 +33,7 @@ export default function Home() {
                   />
                   </div>
                   <h1>Advérbio</h1>
-                </button>
+                </button> 
                 <button class={`${styles.button} ${styles.adjective}`}>
                   <div className={styles.lock}><Image
                     src='/Modulos/Lock.svg'

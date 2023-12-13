@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import styles from './page.module.css'
-import BackGround from '@/app/components/backgroundLinearGradient.component/backgroundLinearGradient.jsx'
+import BackGroundLinearGradient from '@/app/components/backgroundLinearGradient.component/backgroundLinearGradient.jsx'
+import BackgroundGray from '@/app/components/backgroundGray.component/backgroundGray.jsx'
 
 export default function Home() {
   return (
-    <BackGround
+    <>
+      <BackGroundLinearGradient heightBackground={'100vh'}>
 
-      // MAIN
-      mainContent={
         <section className={styles.mainContainer}>
 
           <div className={styles.mainContainerLeft}>
@@ -33,7 +33,7 @@ export default function Home() {
             ></img>
 
             {/* buttons register and login */}
-            <div  className={styles.buttons}>
+            <div className={styles.buttons}>
 
               <button id='btnCadastro' type='button' className={styles.btn}>
                 <Link href="/cadastro">
@@ -61,11 +61,12 @@ export default function Home() {
 
         </section>
 
-      }
 
-      // OTHER SECTIONS
-      sectionContent=
-      {
+      </BackGroundLinearGradient>
+
+
+      <BackgroundGray>
+
         <div className={styles.sectionContentDiv}>
 
           {/* GAMIFYING */}
@@ -266,16 +267,10 @@ export default function Home() {
           </section>
 
           <hr className={styles.line}></hr>
-
-
-
-
-
-
         </div>
-      }
 
+      </BackgroundGray>
+    </>
 
-    />
   )
 }

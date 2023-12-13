@@ -24,7 +24,11 @@ export default function SideNavBar() {
 
         </div>
         <div className="navIcon">
+<<<<<<< HEAD
           <Link className="Links" href="/modulos">
+=======
+          <Link className="Links" href="/modulos/trilha">
+>>>>>>> 22adbf2c3692fd022af47b765e62f4eafd6688d7
             <Image
               src={Trilha}
               alt="Icone Trilha"
@@ -33,7 +37,7 @@ export default function SideNavBar() {
             />
           </Link>
 
-          <Link className="Links" href="/">
+          <Link className="Links" href="/chat_aurora">
             <Image
               src={Chat}
               alt="Icone Chat"
@@ -42,7 +46,7 @@ export default function SideNavBar() {
             />
           </Link>
 
-          <Link className="Links" href="/">
+          <Link className="Links" href="/areaTreinamento">
             <Image
               src={Jogos}
               alt="Icone Jogos"
