@@ -17,8 +17,6 @@ export default function Cadastro() {
         formState: { errors },
     } = useForm();
 
-    const watchPassword = watch("senha");
-
     const onSubmit = async (data) => {
         try {
             const response = await fetch("http://localhost:8080/v1/auth/cadastro", {
@@ -103,21 +101,6 @@ return (
                             />
                             {errors?.password?.type === "minLength" && (
                                 <p className={styles.error}> A senha deve ter no minimo 4 caracteres </p>
-                            )}
-                        </div>
-
-                        <div className={styles.inputbox}>
-                            <input
-                                className={errors?.name && styles.inputError}
-                                type="password"
-                                placeholder="Repita a Senha"
-                                {...register("senha", {
-                                    required: true,
-                                    validate: (value) => value === watchPassword
-                                })}
-                            />
-                            {errors?.passwordConfirmation?.type === "validate" && (
-                                <p className={styles.error}>Senhas não coincidem</p>
                             )}
                         </div>
                         <button onClick={() => handleSubmit(onSubmit)()} className={styles.btn}>
