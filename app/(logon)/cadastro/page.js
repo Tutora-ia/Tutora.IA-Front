@@ -13,7 +13,6 @@ export default function Cadastro() {
     const {
         register,
         handleSubmit,
-        watch,
         formState: { errors },
     } = useForm();
 
@@ -98,7 +97,7 @@ export default function Cadastro() {
                                     className={errors?.name && styles.inputError}
                                     type="password"
                                     placeholder="Senha"
-                                    {...register("password", { required: true, minLength: 4 })}
+                                    {...register("password", { required: true, minLength: 7 })}
                                 />
                                 {errors?.password?.type === "minLength" && (
                                     <p className={styles.error}> A senha deve ter no minimo 4 caracteres </p>
