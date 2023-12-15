@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import styles from './page.module.css'
+import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import GoogleIcon from '@/app/Assets/logon/google.svg'
 import ArrowBackButton from '@/app/components/arrowBackButton.component/arrowBackButton'
@@ -10,6 +11,7 @@ import { useForm } from "react-hook-form";
 import { isEmail } from "validator";
 
 export default function Cadastro() {
+    const router = useRouter();
     const {
         register,
         handleSubmit,
@@ -29,6 +31,7 @@ export default function Cadastro() {
 
             if (response.ok) {
                 alert("Cadastro realizado com sucesso!");
+                router.push('/login')
             } else {
                 alert("Erro ao cadastrar. Por favor, tente novamente.");
             }
@@ -103,7 +106,7 @@ export default function Cadastro() {
                                     <p className={styles.error}> A senha deve ter no minimo 4 caracteres </p>
                                 )}
                             </div>
-                            <button onClick={() => handleSubmit(onSubmit)()} className={styles.btn}>
+                            <button onClick={() => { handleSubmit(onSubmit); router.push('/login'); }} className={styles.btn}>
                                 Cadastrar
                             </button>
                         </div>

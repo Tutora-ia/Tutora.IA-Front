@@ -2,22 +2,21 @@
 
 import { createContext, React, useContext, useEffect, useState } from 'react'
 import { jwtDecode } from 'jwt-decode'
-
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
 import GoogleIcon from '@/app/Assets/logon/google.svg'
 import ArrowBackButton from '@/app/components/arrowBackButton.component/arrowBackButton'
 import Background from '@/app/components/backgroundWithColoredCircles.component/backgroundWithColoredCircles.jsx'
-import { ApplicationContext } from '@/app/(authdUser)/context/ProviderApplication'
+import { ApplicationContext } from '@/app/components/context.component/ApplicationProvider.jsx'
 import { useForm } from "react-hook-form";
 import { isEmail } from "validator";
-
+import { useRouter } from 'next/navigation'
 
 export default function Login() {
-    
-    const { setUser, setLocalUser, setAuth } = useContext(ApplicationContext);
 
+    const { setUser, setLocalUser, setAuth } = useContext(ApplicationContext);
+    const router = useRouter();
     const {
         register,
         handleSubmit,
@@ -26,36 +25,39 @@ export default function Login() {
 
     const onSubmit = async (data) => {
         console.log(JSON.stringify(data, null, 2));
-        try {
-            const response = await fetch("http://localhost:8080/v1/auth/login", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "accept": "/*"
-                },
-                body: JSON.stringify(data)
-            });
-
-            const data = await response.json();
-            console.log(data);
-
-            if (response.ok) {
-                const token = data.token;
-                if(token){
-                    window.localStorage.setItem('token', token);
-                    const localUser = jwtDecode(token);
-                    setUser(localUser);
-                    setAuth(true);
-                    alert("Cadastro realizado com sucesso!");
-                } else {
-                    alert("Algo de errado não está certo! (erro de email/senha)")
-                }
-            } else {
-                alert("Erro ao cadastrar. Por favor, tente novamente.");
-            }
-        } catch (error) {
-            console.error(error);
-        }
+    }
+    //     try {
+    //         const response = await fetch("http://localhost:8080/v1/auth/login", {
+    //             method: "POST",
+    //             headers: {
+    //                 "Content-Type": "application/json",
+    //                 "accept": "application/json"
+    //             },
+    //             body: JSON.stringify(data)
+    //         });
+    //         console.log(response);
+    //         const serverResponse = await response.json();
+    //         if (response.ok) {
+    //             // const token = serverResponse.token;
+    //             // if (token) {
+    //             //     window.localStorage.setItem('token', token);
+    //             //     const localUser = jwtDecode(token);
+    //             //     setUser(localUser);
+    //             //     setAuth(true);
+    //             //     alert("Login feito");
+    //             //     router.push('/modulos')
+    //             // } else {
+    //             //     alert("Algo de errado não está certo! (erro de email/senha)")
+    //             // }
+    //             console.log(serverResponse)
+    //             alert("Deu certo")
+    //         } else {
+    //             alert("Erro ao fazer o login.");
+    //         }
+    //     } catch (error) {
+    //         console.error(error);
+    //     }
+    // }
 
         return (
             <Background heightContainer='100vh' circleColor='#6C33D7'>
@@ -69,7 +71,7 @@ export default function Login() {
 
                 <div className={styles.wrapper}>
 
-                    <form className={styles.form} action="">
+                    <div className={styles.form}>
                         <h1>Login</h1>
                         <div className={styles.icon}>
                             <Image
@@ -107,7 +109,7 @@ export default function Login() {
                                     type="password"
                                     placeholder="Senha"
                                     required
-                                    {...register("password", { required: true})}
+                                    {...register("password", { required: true })}
                                 />
                             </div>
                         </div>
@@ -118,9 +120,8 @@ export default function Login() {
                                 Esqueci a senha
                             </Link>
                         </div>
-                        <Link href={.}
-                        <button onClick={() => handleSubmit(onSubmit)()} type="submit" className={styles.btn}>Entrar</button>
-                    </form>
+                        <button onClick={() => { handleSubmit(onSubmit); router.push('/modulos/trilha'); }} className={styles.btn}>Entrar</button>
+                    </div>
                 </div>
 
                 <div className={styles.textright}>
@@ -138,5 +139,4 @@ export default function Login() {
                 </div>
             </Background>
         )
-   }
-}
+    }
