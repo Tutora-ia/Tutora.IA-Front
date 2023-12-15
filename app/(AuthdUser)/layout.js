@@ -1,5 +1,6 @@
 import styles from '@/app/globals.css';
 import SideNavBar from '../components/sideNavBar.component/sideNavBar';
+import { ApplicationContext } from '../components/context.component/ApplicationProvider';
 
 
 export const metadata = {
@@ -14,8 +15,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body>
-            <SideNavBar />
-            {children}
+        {/* <ApplicationContext> */}
+          <SideNavBar />
+          {children}
+        {/* </ApplicationContext> */}
       </body>
     </html>
   )

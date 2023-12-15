@@ -2,11 +2,12 @@ import Link from 'next/link'
 import styles from './page.module.css'
 import BackGroundLinearGradient from '@/app/components/backgroundLinearGradient.component/backgroundLinearGradient.jsx'
 import BackgroundGray from '@/app/components/backgroundGray.component/backgroundGray.jsx'
+import { AnimatePresence, motion } from 'framer-motion'
 
 export default function Home() {
   return (
     <>
-      <BackGroundLinearGradient heightBackground={'100vh'}>
+      <BackGroundLinearGradient heightBackground={'100vh'} >
 
         <section className={styles.mainContainer}>
 

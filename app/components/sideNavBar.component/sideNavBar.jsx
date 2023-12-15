@@ -24,11 +24,7 @@ export default function SideNavBar() {
 
         </div>
         <div className="navIcon">
-<<<<<<< HEAD
-          <Link className="Links" href="/modulos">
-=======
           <Link className="Links" href="/modulos/trilha">
->>>>>>> 22adbf2c3692fd022af47b765e62f4eafd6688d7
             <Image
               src={Trilha}
               alt="Icone Trilha"

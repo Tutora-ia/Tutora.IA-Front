@@ -44,24 +44,18 @@
   text-decoration: none;
   color: #fff;
   font-weight: 400;
-  border-bottom: 2px solid transparent;
   font-size: 22px;
   font-family: 'Exo 2', sans-serif;
-  transition: color 0.3s ease-in-out;
 }
 
-.navBarLink::after {
-  content: '';
+.underline {
+  position: absolute;
+  left: 0;
+  top: 100%;
   display: block;
-  width: 100%;
   height: 2px;
-  background-color: #4b2395;
-  transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
-}
-
-.navBarLink:hover::after {
-  transform: scaleX(1);
+  width: 100%;
+  background-color: #4B2395;
 }
 
 /* Lado dos botoes */

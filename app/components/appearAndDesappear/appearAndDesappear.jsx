@@ -4,7 +4,7 @@ import { useRef, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
 
-const ScrollComponent = ({ children, elementId }) => {
+const ScrollComponent = ({ content, elementId }) => {
 
     const elementPosition = () => {
 
@@ -46,7 +46,7 @@ const ScrollComponent = ({ children, elementId }) => {
         
     
 
-    return (<div onLoad={handleScroll} style={{ display: isVisible ? 'block' : 'none' }}>{children}</div>)
+    return (<div onLoad={handleScroll} style={{ display: isVisible ? 'block' : 'none' }}>{content}</div>)
 };
 
 
