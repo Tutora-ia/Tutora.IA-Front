@@ -53,8 +53,7 @@ export default function Cadastro() {
                     </div>
 
                     <div className={styles.container}>
-
-                        <div className={styles.form} action="">
+                        <div className={styles.form}>
                             <h1>Cadastre-se</h1>
 
                             <div className={styles.icon}>
@@ -106,7 +105,7 @@ export default function Cadastro() {
                                     <p className={styles.error}> A senha deve ter no minimo 4 caracteres </p>
                                 )}
                             </div>
-                            <button onClick={() => { handleSubmit(onSubmit); router.push('/login'); }} className={styles.btn}>
+                            <button onClick={() => handleSubmit(onSubmit)()} className={styles.btn}>
                                 Cadastrar
                             </button>
                         </div>
