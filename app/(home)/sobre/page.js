@@ -159,10 +159,10 @@ export default function Sobre() {
                                 <div className={styles.devInformation}>
                                     <img src="/Sobre/Leonardo.jpeg" id={styles.leonardoImage} className={styles.devPhoto} alt="" />
                                     <h3 className={`${styles.name} ${styles.nameLeonardo}`}>LEONARDO SARDINHA</h3>
-                                    <p className={styles.devFunctions}>Product Owner, Designer e Dev Full Stack</p></div>
+                                    <p className={styles.devFunctions}>Product Owner, Designer e Dev Front-End</p></div>
                                 <div className={styles.devMessage}>
                                     <img className={styles.vector} src='/Sobre/LeonardoVector.png' alt=''></img>
-                                    <p className={styles.message}>“Me disseram que eu não conseguiria, mas vou provar pra todos que estão errados.”</p>
+                                    <p className={styles.message}>“Me disseram que eu não conseguiria, mas vou provar para todos que estão errados.”</p>
                                 </div>
                             </div>
                         </div>

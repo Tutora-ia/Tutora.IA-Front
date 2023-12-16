@@ -64,7 +64,8 @@
 .squareFases{
   width:130px;
   height: 95px;
-  background-color: #0390FF;
+  /* background-color: #0390FF; */
+  background-color: #A3218E;
   border-radius: 1rem;
   padding-top: 5px;
   display: flex;
@@ -77,7 +78,8 @@
   
   width: 90%;
   height: 85%;
-  background-color: #C3E5F8;
+  /* background-color: #C3E5F8; */
+  background-color: #F07CDD;
   border-radius: 1rem;
   display: flex;
   align-items: center;

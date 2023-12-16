@@ -26,11 +26,11 @@ export default function Home() {
               {/* LINES */}
               <div class={`${styles.linhaEmL1} ${styles.linhaEmL} ${styles.linhaEmLOpen}`}></div>
 
-              <div class={`${styles.linhaEmL2} ${styles.linhaEmL}`}></div>
+              <div class={`${styles.linhaEmL2} ${styles.linhaEmL} ${styles.linhaEmLOpen}`}></div>
 
-              <div class={`${styles.linhaEmL3} ${styles.linhaEmL} `}></div>
+              <div class={`${styles.linhaEmL3} ${styles.linhaEmL} ${styles.linhaEmLOpen}`}></div>
 
-              <div class={`${styles.linhaEmL4} ${styles.linhaEmL}`}></div>
+              <div class={`${styles.linhaEmL4} ${styles.linhaEmL} `}></div>
 
 
               {/* SQUARES */}
@@ -42,11 +42,11 @@ export default function Home() {
                     <img className={styles.faseIcon} src='/Modulos/pinkHat.svg'></img>
                   </div>
 
-                  <div className={styles.bubbleDiv}>
+                  {/* <div className={styles.bubbleDiv}>
                     <img className={styles.bubble} src='/Modulos/bubble.svg'></img>
                     <h2>Iniciar</h2>
-                  </div>
-                </div>
+                  </div>*/}
+                </div> 
               </div></Link>
 
               <div className={`${styles.squareFase2} ${styles.squareFases}`}>
@@ -57,7 +57,8 @@ export default function Home() {
                   </div>
 
                   <div className={styles.faseIcon}>
-                    <img className={styles.faseIcon} src='/Modulos/lockImage.svg'></img>
+                    {/* <img className={styles.faseIcon} src='/Modulos/lockImage.svg'></img> */}
+                    <img className={styles.faseIcon} src='/Modulos/pinkHat.svg'></img>
                   </div>
 
                 </div>
@@ -71,7 +72,8 @@ export default function Home() {
                   </div>
 
                   <div className={styles.faseIcon}>
-                    <img className={styles.faseIcon} src='/Modulos/lockImage.svg'></img>
+                    {/* <img className={styles.faseIcon} src='/Modulos/lockImage.svg'></img> */}
+                    <img className={styles.faseIcon} src='/Modulos/pinkHat.svg'></img>
                   </div>
 
                 </div>
@@ -85,7 +87,8 @@ export default function Home() {
                   </div>
 
                   <div className={styles.faseIcon}>
-                    <img className={styles.faseIcon} src='/Modulos/lockImage.svg'></img>
+                    {/* <img className={styles.faseIcon} src='/Modulos/lockImage.svg'></img> */}
+                    <img className={styles.faseIcon} src='/Modulos/pinkHat.svg'></img>
                   </div>
 
                 </div>

@@ -55,7 +55,7 @@ export default function Home() {
                 {/* BOTTON */}
                 <div className={styles.botton}>
 
-                    <h2 className={styles.title}>Fique tranquil<span>♡</span> Pupil<span>♡</span>, você não está sozinh<span>♡</span> nesta jornada!</h2>
+                    <h2 className={styles.title}>Você não está sozinh<span>♡</span> nesta jornada!</h2>
                     <div className={styles.bottonMain}>
 
                         {/* LEFT */}
