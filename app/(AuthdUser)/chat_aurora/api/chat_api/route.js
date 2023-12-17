@@ -4,7 +4,7 @@ import OpenAI from 'openai'
 export async function POST(request) {
 
     const openai = new OpenAI({
-        apiKey: "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"
+        apiKey: process.env.OPENAI_API_KEY
     })
 
     // Pegando as informações do input do usuário
