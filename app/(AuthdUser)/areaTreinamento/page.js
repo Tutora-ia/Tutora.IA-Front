@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Background
 
-      children={
+      content={
 
         <div className={styles.container}>
           <ArrowBackButton></ArrowBackButton>

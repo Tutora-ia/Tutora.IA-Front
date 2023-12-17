@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <Background
 
-      children={
+      content={
         <main className={styles.mainHome}>
           <ArrowBackButton />
           <div className={styles.ContainerHome}>

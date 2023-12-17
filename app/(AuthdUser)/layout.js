@@ -1,7 +1,5 @@
 import styles from '@/app/globals.css';
 import SideNavBar from '../components/sideNavBar.component/sideNavBar';
-import { ApplicationContext } from '../components/context.component/ApplicationProvider';
-
 
 export const metadata = {
   title: 'Tutora.IA',
@@ -15,10 +13,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body>
-        {/* <ApplicationContext> */}
           <SideNavBar />
           {children}
-        {/* </ApplicationContext> */}
       </body>
     </html>
   )

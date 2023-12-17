@@ -8,7 +8,7 @@ import ArrowBackButton from '@/app/components/arrowBackButton.component/arrowBac
 export default function Home() {
   return (
     <Background
-      children={
+      content={
         <div className={styles.mainTrail}>
           <header>
             <ArrowBackButton />
@@ -24,30 +24,30 @@ export default function Home() {
             <div className={styles.trail}>
 
               {/* LINES */}
-              <div class={`${styles.linhaEmL1} ${styles.linhaEmL} ${styles.linhaEmLOpen}`}></div>
+              <div className={`${styles.linhaEmL1} ${styles.linhaEmL} ${styles.linhaEmLOpen}`}></div>
 
-              <div class={`${styles.linhaEmL2} ${styles.linhaEmL} ${styles.linhaEmLOpen}`}></div>
+              <div className={`${styles.linhaEmL2} ${styles.linhaEmL} ${styles.linhaEmLOpen}`}></div>
 
-              <div class={`${styles.linhaEmL3} ${styles.linhaEmL} ${styles.linhaEmLOpen}`}></div>
+              <div className={`${styles.linhaEmL3} ${styles.linhaEmL} ${styles.linhaEmLOpen}`}></div>
 
-              <div class={`${styles.linhaEmL4} ${styles.linhaEmL} `}></div>
+              <div className={`${styles.linhaEmL4} ${styles.linhaEmL} `}></div>
 
 
               {/* SQUARES */}
               <Link href={'./trilha/fase1/auroraExplica'}>
-              <div className={`${styles.squareFase1} ${styles.squareFaseOpens} ${styles.squareFases}`}>
+                <div className={`${styles.squareFase1} ${styles.squareFaseOpens} ${styles.squareFases}`}>
 
-                <div className={`${styles.square2Fase1} ${styles.square2FaseOpen} ${styles.square2Fases}`}>
-                  <div className={styles.faseIcon}>
-                    <img className={styles.faseIcon} src='/Modulos/pinkHat.svg'></img>
-                  </div>
+                  <div className={`${styles.square2Fase1} ${styles.square2FaseOpen} ${styles.square2Fases}`}>
+                    <div className={styles.faseIcon}>
+                      <img className={styles.faseIcon} src='/Modulos/pinkHat.svg'></img>
+                    </div>
 
-                  {/* <div className={styles.bubbleDiv}>
+                    {/* <div className={styles.bubbleDiv}>
                     <img className={styles.bubble} src='/Modulos/bubble.svg'></img>
                     <h2>Iniciar</h2>
                   </div>*/}
-                </div> 
-              </div></Link>
+                  </div>
+                </div></Link>
 
               <div className={`${styles.squareFase2} ${styles.squareFases}`}>
                 <div className={`${styles.square2Fase2} ${styles.square2Fases}`}>
