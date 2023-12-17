@@ -1,6 +1,7 @@
 import '../globals.css';
 import Header from '../components/header.component/header.jsx';
 import Footer from '../components/footer.component/footer.jsx';
+import { Providers } from '../providers';
 
 export const metadata = {
   title: 'Tutora.IA',
@@ -8,13 +9,15 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  
-    return (
+
+  return (
     <html lang="pt-br">
       <body>
-        <Header/> 
-          {children}
-        <Footer />
+        <Providers>
+          <Header />
+            {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   )

@@ -1,5 +1,6 @@
 import styles from '@/app/globals.css';
 import SideNavBar from '../components/sideNavBar.component/sideNavBar';
+import { Providers } from "../providers.jsx";
 
 export const metadata = {
   title: 'Tutora.IA',
@@ -9,12 +10,13 @@ export const metadata = {
 
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="pt-br">
       <body>
-          <SideNavBar />
+        <Providers>
+          <SideNavBar/>
           {children}
+        </Providers>
       </body>
     </html>
   )
