@@ -2,9 +2,7 @@
 .arrowBackButtonDiv{
     cursor: pointer;
     text-decoration: none;
-    position: absolute;
-    top: 3rem;
-    left: 3rem;
+    padding: 1rem;
 }
 
 @media screen and (max-width:600px){
