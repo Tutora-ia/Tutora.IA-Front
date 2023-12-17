@@ -6,7 +6,7 @@ import styles from '../page.module.css'
 import { FiPlus } from "react-icons/fi";
 import { exo, orbitron } from '@/app/components/fonts.js';
 
-const page = () => {
+const Page = () => {
     return (
         <main className={styles.mainAbout}>
             <div className={styles.backPink}> 
@@ -31,4 +31,4 @@ const page = () => {
 
 }
 
-export default page
+export default Page

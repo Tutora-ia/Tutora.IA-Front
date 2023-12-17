@@ -7,7 +7,7 @@ import { IoPaperPlane } from "react-icons/io5";
 import Background from '@/app/components/purpleBackgroundAuthdUser/purpleBackground.jsx';
 import ArrowBackButton from '@/app/components/arrowBackButton.component/arrowBackButton.jsx';
 
-const page = () => {
+const Page = () => {
     const [questionsActive, setActiveQuestion] = useState(0);
     const [selectedAnswers, setSelectedAnswers] = useState("");
     const [check, setCheck] = useState(false);
@@ -67,10 +67,10 @@ const page = () => {
     return (
         <Background
 
-            children={
+            content={
 
                 <main className={styles.main}>
-                    <ArrowBackButton/>
+                    <ArrowBackButton />
 
                     <div className={styles.Container}>
                         <div>
@@ -126,4 +126,4 @@ const page = () => {
     );
 }
 
-export default page
+export default Page

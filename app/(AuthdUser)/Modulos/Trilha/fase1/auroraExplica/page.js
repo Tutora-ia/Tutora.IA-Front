@@ -7,7 +7,7 @@ import ArrowBackButton from '@/app/components/arrowBackButton.component/arrowBac
 export default function Home() {
   return (
     <Background
-      children={
+      content={
         <div className={styles.containerMap}>
           <div className={styles.back}>
             <ArrowBackButton />
@@ -53,37 +53,37 @@ export default function Home() {
 
 
             </div>{/* end containerExplication*/}
-            
-              <div className={styles.containerAurora}> {/* place talk aurora */}
 
-                <div className={`${styles.button} ${styles.audio}`}>
-                  <button className={styles.btnsong}>
-                    <Image
-                      src='/Explicacao/volume_fill.svg'
-                      width="20"
-                      height="20"
-                      alt=''
-                    />
-                  </button>
-                  <img className={styles.img}
-                      src='/Explicacao/Aurora.svg'
-                      alt=''
-                    ></img>
+            <div className={styles.containerAurora}> {/* place talk aurora */}
 
-                  
+              <div className={`${styles.button} ${styles.audio}`}>
+                <button className={styles.btnsong}>
+                  <Image
+                    src='/Explicacao/volume_fill.svg'
+                    width="20"
+                    height="20"
+                    alt=''
+                  />
+                </button>
+                <img className={styles.img}
+                  src='/Explicacao/Aurora.svg'
+                  alt=''
+                ></img>
 
-                </div> {/* end div button audo */}
-                <Link class={`${styles.continue}`} href='/modulos/trilha/fase1/questoes'>
-                      CONTINUAR
-                    
-                  </Link>
-              </div>{/* end container aurora */}
-            
+
+
+              </div> {/* end div button audo */}
+              <Link className={`${styles.continue}`} href='/modulos/trilha/fase1/questoes'>
+                CONTINUAR
+
+              </Link>
+            </div>{/* end container aurora */}
+
           </div>
-          <Link class={`${styles.continueBtnOut}`} href='/modulos/trilha/fase1/questoes'>
-                      CONTINUAR
-                    
-                  </Link>
+          <Link className={`${styles.continueBtnOut}`} href='/modulos/trilha/fase1/questoes'>
+            CONTINUAR
+
+          </Link>
         </div>
 
       }

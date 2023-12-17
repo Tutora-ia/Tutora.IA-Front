@@ -7,7 +7,7 @@ import Link from 'next/link'
 import Background from '@/app/components/purpleBackgroundAuthdUser/purpleBackground.jsx'
 import ArrowBackButton from '@/app/components/arrowBackButton.component/arrowBackButton.jsx';
 
-const page = () => {
+const Page = () => {
     const [questionsActive, setActiveQuestion] = useState(0);
     const [selectedAnswers, setSelectedAnswers] = useState("");
     const [check, setCheck] = useState(false);
@@ -69,7 +69,7 @@ const page = () => {
     return (
         <Background
 
-            children={
+            content={
                 <div className={styles.containerMainQuestions}>
                     <ArrowBackButton></ArrowBackButton>
                     <main className={styles.mainQuestions}>
@@ -144,4 +144,4 @@ const page = () => {
     );
 }
 
-export default page
+export default Page

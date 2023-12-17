@@ -7,7 +7,7 @@ import ArrowBackButton from '@/app/components/arrowBackButton.component/arrowBac
 export default function Home() {
   return (
     <Background
-      children={
+      content={
         <div className={styles.containerMap}>
           <div className={styles.back}>
             <ArrowBackButton />
@@ -62,14 +62,14 @@ export default function Home() {
 
 
               </div> {/* end div button audo */}
-              <Link class={`${styles.continue}`} href='/modulos/trilha/fase3/questoes'>
+              <Link className={`${styles.continue}`} href='/modulos/trilha/fase3/questoes'>
                 CONTINUAR
 
               </Link>
             </div>{/* end container aurora */}
 
           </div>
-          <Link class={`${styles.continueBtnOut}`} href='/modulos/trilha/fase3/questoes'>
+          <Link className={`${styles.continueBtnOut}`} href='/modulos/trilha/fase3/questoes'>
             CONTINUAR
 
           </Link>

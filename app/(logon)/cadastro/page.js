@@ -1,26 +1,15 @@
-'use client'
-
 import Link from 'next/link'
 import styles from './page.module.css'
-import { useRouter } from 'next/navigation'
-import Image from 'next/image'
-import GoogleIcon from '@/app/Assets/logon/google.svg'
 import ArrowBackButton from '@/app/components/arrowBackButton.component/arrowBackButton'
 import BackgroundLogin from '@/app/components/backgroundWithColoredCircles.component/backgroundWithColoredCircles.jsx'
-import { useForm } from "react-hook-form";
-import { isEmail } from "validator";
+import { SignUp } from '@/app/components/form.component/singUp/SingUp'
 
 export default function Cadastro() {
-    const router = useRouter();
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-    } = useForm();
 
     const onSubmit = async (data) => {
-        console.log(JSON.stringify(data, null, 2));
+        
         try {
+            console.log(JSON.stringify(data, null, 2));
             const response = await fetch("http://localhost:8080/v1/auth/sign-up", {
                 method: "POST",
                 headers: {
@@ -53,63 +42,7 @@ export default function Cadastro() {
                     </div>
 
                     <div className={styles.container}>
-
-                        <div className={styles.form} action="">
-                            <h1>Cadastre-se</h1>
-
-                            <div className={styles.icon}>
-                                <Image
-                                    className={styles.googleIcon}
-                                    src={GoogleIcon}
-                                    alt=''
-                                    width={45}
-                                    height={45}
-                                />
-                            </div>
-
-
-                            <div className={styles.otherOptions}>
-                                <div className={styles.line}>
-                                    <hr className={styles.hrEstilizada} />
-                                </div>
-                                <p className={styles.ou}>OU</p>
-                                <div className={styles.line}>
-                                    <hr className={styles.hrEstilizada} />
-                                </div>
-                            </div>
-
-                            <div className={styles.inputbox}>
-                                <input
-                                    className={errors?.name && styles.inputError}
-                                    type="text"
-                                    placeholder="Nome"
-                                    {...register("name", { required: true })}
-                                />
-                            </div>
-
-                            <div className={styles.inputbox}>
-                                <input
-                                    className={errors?.name && styles.inputError}
-                                    type="text"
-                                    placeholder="E-mail"
-                                    {...register("email", { required: true, validate: (value) => isEmail(value), })}
-                                />
-                            </div>
-                            <div className={styles.inputbox}>
-                                <input
-                                    className={errors?.name && styles.inputError}
-                                    type="password"
-                                    placeholder="Senha"
-                                    {...register("password", { required: true, minLength: 7 })}
-                                />
-                                {errors?.password?.type === "minLength" && (
-                                    <p className={styles.error}> A senha deve ter no minimo 4 caracteres </p>
-                                )}
-                            </div>
-                            <button onClick={() => { handleSubmit(onSubmit); router.push('/login'); }} className={styles.btn}>
-                                Cadastrar
-                            </button>
-                        </div>
+                        <SignUp />
                     </div>
 
                     <div className={styles.textright}>
