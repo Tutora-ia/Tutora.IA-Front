@@ -67,80 +67,75 @@ const Page = () => {
     }
 
     return (
-        <Background
+        <Background>
+            <div className={styles.containerMainQuestions}>
+                <ArrowBackButton></ArrowBackButton>
+                <main className={styles.mainQuestions}>
 
-            content={
-                <div className={styles.containerMainQuestions}>
-                    <ArrowBackButton></ArrowBackButton>
-                    <main className={styles.mainQuestions}>
+                    {!showResult ? (
 
-                        {!showResult ? (
-
-                            <div className={styles.mainCont}>
-                                <div className={questionsActive === questions.length - 1 ? styles.containerQuestions2 : styles.containerQuestions}>
-                                    <h2 >Fase 2 - Porquês
-                                    </h2>
-                                </div>
-                                <div className={styles.pergunta}>
-                                    <h3><span className={styles.p}>Pergunta:</span> {questions[questionsActive].question}</h3>
-                                </div>
-
-                                <div className={styles.containerAwsners}>
-                                    {answers.map((answers, idx) => (
-                                        <li key={idx}
-                                            onClick={() => onAnswerSelected(answers, idx)}
-                                            className={selectAnswersIndex === idx ? styles.liSelected : styles.liHover}>
-                                            {answers}
-                                        </li>
-                                    ))}
-                                </div>
-
-                                <div className={styles.planeButton}>
-                                    {check ? (
-                                        <button onClick={nextQuestion} className={`${styles.btn}`}>
-                                            {questionsActive === questions.length - 1 ? 'Finalizar' : 'Continuar'}
-                                        </button>
-                                    ) : (
-                                        <button onClick={nextQuestion} disabled className={`${styles.btn}`}>
-                                            {questionsActive === questions.length - 1 ? 'Finalizar' : 'Continuar'}
-                                        </button>
-                                    )}
-                                </div>
-
+                        <div className={styles.mainCont}>
+                            <div className={questionsActive === questions.length - 1 ? styles.containerQuestions2 : styles.containerQuestions}>
+                                <h2 >Fase 2 - Porquês
+                                </h2>
+                            </div>
+                            <div className={styles.pergunta}>
+                                <h3><span className={styles.p}>Pergunta:</span> {questions[questionsActive].question}</h3>
                             </div>
 
-                        ) : (
-                            <div className={styles.mainCont2}>
-                                <div className={styles.containerQuestions3}>
-                                    <h2 >Fase 2 - Porquês
-                                    </h2>
-                                </div>
-                                <div className={styles.classification}>
-                                    <div className={styles.classificationCont}>
-                                        <h1>{result.correctAnswers === questions.length ? 'PARABÉNS, PUPIL♡, VOCÊ FOI INCRÍVEL!!!' : 'QUE PENA, NÃO FOI DESSA VEZ! MAS CONTINUE TENTANDO SEMPRE!'}
-                                        </h1>
-
-                                        <Link href={result.correctAnswers === questions.length ? '/modulos/trilha' :
-                                            '/modulos/trilha/fase2/auroraExplica'}>
-                                            <button className={`${styles.btnClassification} `}>
-                                                {result.correctAnswers === questions.length ? 'VOLTAR A TRILHA' : 'FAZER NOVAMENTE'}
-                                            </button>
-                                        </Link>
-
-                                    </div>
-                                    <img className={styles.auroraImg} src='/Aurora.svg'></img>
-
-
-
-                                </div>
+                            <div className={styles.containerAwsners}>
+                                {answers.map((answers, idx) => (
+                                    <li key={idx}
+                                        onClick={() => onAnswerSelected(answers, idx)}
+                                        className={selectAnswersIndex === idx ? styles.liSelected : styles.liHover}>
+                                        {answers}
+                                    </li>
+                                ))}
                             </div>
-                        )}
-                    </main>
-                </div>
 
-            }
-        />
+                            <div className={styles.planeButton}>
+                                {check ? (
+                                    <button onClick={nextQuestion} className={`${styles.btn}`}>
+                                        {questionsActive === questions.length - 1 ? 'Finalizar' : 'Continuar'}
+                                    </button>
+                                ) : (
+                                    <button onClick={nextQuestion} disabled className={`${styles.btn}`}>
+                                        {questionsActive === questions.length - 1 ? 'Finalizar' : 'Continuar'}
+                                    </button>
+                                )}
+                            </div>
 
+                        </div>
+
+                    ) : (
+                        <div className={styles.mainCont2}>
+                            <div className={styles.containerQuestions3}>
+                                <h2 >Fase 2 - Porquês
+                                </h2>
+                            </div>
+                            <div className={styles.classification}>
+                                <div className={styles.classificationCont}>
+                                    <h1>{result.correctAnswers === questions.length ? 'PARABÉNS, PUPIL♡, VOCÊ FOI INCRÍVEL!!!' : 'QUE PENA, NÃO FOI DESSA VEZ! MAS CONTINUE TENTANDO SEMPRE!'}
+                                    </h1>
+
+                                    <Link href={result.correctAnswers === questions.length ? '/modulos/trilha' :
+                                        '/modulos/trilha/fase2/auroraExplica'}>
+                                        <button className={`${styles.btnClassification} `}>
+                                            {result.correctAnswers === questions.length ? 'VOLTAR A TRILHA' : 'FAZER NOVAMENTE'}
+                                        </button>
+                                    </Link>
+
+                                </div>
+                                <img className={styles.auroraImg} src='/Aurora.svg'></img>
+
+
+
+                            </div>
+                        </div>
+                    )}
+                </main>
+            </div>
+        </Background>
     );
 }
 

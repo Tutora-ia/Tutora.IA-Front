@@ -67,11 +67,9 @@ const Page = () => {
     }
 
     return (
-        <Background
-
-            content={
+        <Background>
                 <div className={styles.containerMainQuestions}>
-                    <ArrowBackButton></ArrowBackButton>
+                    <ArrowBackButton/>
                     <main className={styles.mainQuestions}>
 
                         {!showResult ? (
@@ -137,9 +135,7 @@ const Page = () => {
                         )}
                     </main>
                 </div>
-
-            }
-        />
+        </Background>
 
     );
 }

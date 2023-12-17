@@ -6,12 +6,10 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <Background
-
-      content={
+    <Background>
 
         <div className={styles.container}>
-          <ArrowBackButton></ArrowBackButton>
+          <ArrowBackButton/>
           <main className={styles.main}>
             <div className={styles.rectangle1}>
               <h2 className={styles.training}>TREINAMENTO</h2>
@@ -35,8 +33,7 @@ export default function Home() {
           </ main>
         </div>
 
-      }
 
-    />
+      </Background>
   )
 }
