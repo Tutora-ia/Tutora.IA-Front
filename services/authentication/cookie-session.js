@@ -26,6 +26,7 @@ export async function setSession(credentials) {
   cookies().set('auth_session', encryptedSession, {
     sameSite: 'strict',
     httpOnly: true,
-    secure: true
+    secure: true,
+    maxAge: 2592000
   });
 }

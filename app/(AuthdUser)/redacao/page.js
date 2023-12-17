@@ -30,8 +30,6 @@ export default function Redacao() {
                 </Link>
                 <div className={styles.redacoesRecentes}>
                     <p>Redações Recentes</p>
-
-                    
                     <RedacaoFeita />
                 </div>
             </div>
