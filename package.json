@@ -12,8 +12,6 @@
     "@fortawesome/fontawesome-free": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "@nextui-org/react": "^2.2.9",
-    "framer-motion": "^10.16.16",
     "iron-session": "^8.0.1",
     "jwt-decode": "^4.0.0",
     "next": "^14.0.3",
