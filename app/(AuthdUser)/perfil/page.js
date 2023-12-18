@@ -1,56 +1,48 @@
-import PurpleBackground from "@/app/components/purpleBackgroundAuthdUser/purpleBackground";
+import PurpleBackground from "@/app/components/purpleBackgroundAuthdUser/purpleBackground.jsx";
 import styles from "./page.module.css"
-import ProgressBar from "@/app/components/progressBar.component/ProgressBar";
 import Link from "next/link";
-import Image from "next/image";
-import relogio from "@/app/Assets/AuthdUser/perfil/clock.svg"
-import userImage from "@/app/Assets/AuthdUser/perfil/profileImage.svg"
-import configButton from "@/app/Assets/AuthdUser/perfil/config.png"
-import Aurora from "@/app/Assets/AuthdUser/perfil/Aurora.svg"
+import ArrowBackButton from "@/app/components/arrowBackButton.component/arrowBackButton.jsx";
 
 export default function Perfil() {
     return (
-        <PurpleBackground>
+        <PurpleBackground className={styles.container} >
+            
             <div className={styles.contentContainer}>
-                <div className={styles.contentEsquerda}>
+
+            <div className={styles.contentEsquerda}>
+                <div className={styles.arrow}>
+                <ArrowBackButton  />
+                </div>
+                    <img
+                        src="/Aurora.svg"
+                        alt="Nossa mascote Aurora"
+                        className={styles.aurora}
+                    ></img>
+                </div>
+            <div className={styles.contentDireita}>
                     <div className={styles.containerCima}>
                         <div className={styles.infoEsquerda}>
                             <h3>Hernando Silva</h3>
-                            <p>Inicio da jornada de aprendizado</p>
-                            <div className={styles.date}>
-                                <div className={styles.containerDate}>
-                                    <Image
-                                        src={relogio}
-                                        alt="relogio simbolizando a quanto tempo a conta foi criada"
-                                        width={20}
-                                        height={20}
-                                    />
-                                </div>
-                                <p>01/08/2023</p>
-                            </div>
                         </div>
                         <div className={styles.infoDireita}>
                             <div className={styles.userImage}>
-                                <Image
-                                    src={userImage}
+                                <img className={styles.userImage}
+                                    src="/Perfil/Profile.svg"
                                     alt="Foto de perfil"
-                                    width={135}
-                                    height={135}
-                                />
+                                ></img>
                             </div>
                             <Link href={'/'}>
                                 <button className={styles.configButton}>
-                                <Image
-                                    src={configButton}
-                                    alt="Foto de perfil"
-                                    width={40}
-                                    height={40}
-                                />
+                                    <img className={styles.configButton}
+                                        src="/Perfil/Configuracao.svg"
+                                        alt="Foto de perfil"
+                                    ></img>
                                 </button>
                             </Link>
                         </div>
                     </div>
-                    <div className={styles.missoesUsuario}>
+                    <div className={styles.missoesUsuarioCont}>
+                        <div className={styles.missoesUsuario}>
                         <div className={styles.missaoDia}>
                             <h3>Missão do Dia</h3>
                             <p>Desbloqueie uma nova fase!</p>
@@ -60,20 +52,10 @@ export default function Perfil() {
                             <p>Elabore sua Primeira redação</p>
                             <button>VER MAIS</button>
                         </div>
+                        </div>
                     </div>
                 </div>
-                <div className={styles.contentDireita}>
-                    <ProgressBar />
-                    <div className={styles.auroraContainer}>
-                        <Image
-                            src={Aurora}
-                            alt="Nossa mascote Aurora"
-                            width={250}
-                            height={471}
-                            className={styles.aurora}
-                        />
-                    </div>
-                </div>
+                
             </div>
         </PurpleBackground>
     )

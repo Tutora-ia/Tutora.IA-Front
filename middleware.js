@@ -12,7 +12,7 @@ export async function middleware(request) {
     }
     
     if (user !== null && request.nextUrl.pathname.startsWith('/login') || request.nextUrl.pathname.startsWith('/cadastro')) {
-        return NextResponse.redirect(new URL('/modulos/trilha', request.url));
+        return NextResponse.redirect(new URL('/modulos/trilha-demo', request.url));
     }
     
     return NextResponse.next();

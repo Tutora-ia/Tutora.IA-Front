@@ -21,10 +21,11 @@ export default function PromptForm({ onSubmit, isLoading }) {
         setPrompt("");
     };
 
+
     return (
         <form className={styles.form}
         onSubmit={handleSubmit}>
-            <input className={styles.input} placeholder="Digite aqui sua dúvida, Pupil♡." type="text" value={prompt} onChange={e => {
+            <input className={styles.input} placeholder="Digite aqui, Pupil♡." type="text" value={prompt} onChange={e => {
                 setPrompt(e.target.value)
             }} />
 

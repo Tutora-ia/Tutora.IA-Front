@@ -53,15 +53,15 @@ const MenuBtn = () => {
                         <ul>
                             <div className='listItensDiv'>
                                 <div>
-                                    <li className='subMenus' onClick={linkClicked}><Link href="/"><div><h2>Trilha de Estudos</h2><Image  src={Trilha} width={60} height={60}></Image></div></Link></li>
-                                    <li className='subMenus' onClick={linkClicked}><Link href="/"><div><h2>Chat com a Aurora</h2><Image  src={Chat} width={60} height={60}></Image></div></Link></li>
-                                    <li className='subMenus' onClick={linkClicked}><Link href="/"><div><h2>Treinamento</h2><Image  src={Treinamento} width={60} height={60}></Image></div></Link></li>
-                                    <li className='subMenus' onClick={linkClicked}><Link href="/"><div><h2>Missões</h2><Image  src={Missoes} width={60} height={60}></Image></div></Link></li>
-                                    <li className='subMenus' onClick={linkClicked}><Link href="/"><div><h2>Área de Redações</h2><Image  src={Redacao} width={60} height={60}></Image></div></Link></li>
-                                    <li className='subMenus' onClick={linkClicked}><Link href="/"><div><h2>Perfil do Pupil♡</h2><Image  src={Perfil} width={60} height={60}></Image></div></Link></li>
+                                    <li className='subMenus' onClick={linkClicked}><Link href="/modulos"><div><h2>Módulos</h2><Image  src={Trilha} width={60} height={60}></Image></div></Link></li>
+                                    <li className='subMenus' onClick={linkClicked}><Link href="/chat_aurora"><div><h2>Chat com a Aurora</h2><Image  src={Chat} width={60} height={60}></Image></div></Link></li>
+                                    <li className='subMenus' onClick={linkClicked}><Link href="/areaTreinamento"><div><h2>Treinamento</h2><Image  src={Treinamento} width={60} height={60}></Image></div></Link></li>
+                                    {/* <li className='subMenus' onClick={linkClicked}><Link href="/"><div><h2>Missões</h2><Image  src={Missoes} width={60} height={60}></Image></div></Link></li> */}
+                                    <li className='subMenus' onClick={linkClicked}><Link href="/redacao"><div><h2>Área de Redações</h2><Image  src={Redacao} width={60} height={60}></Image></div></Link></li>
+                                    <li className='subMenus' onClick={linkClicked}><Link href="/perfil"><div><h2>Perfil do Pupil♡</h2><Image  src={Perfil} width={60} height={60}></Image></div></Link></li>
                                 </div>
                                 <div>
-                                    <li className='subMenus'><Link onClick={linkClicked} href="/cadastro"><h2>Sair</h2></Link></li>
+                                    <li className='subMenus'><Link onClick={linkClicked} href="/login"><h2>Sair</h2></Link></li>
                                 </div>
                             </div>
                         </ul>

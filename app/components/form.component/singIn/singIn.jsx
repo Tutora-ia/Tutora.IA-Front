@@ -34,7 +34,7 @@ export default function SingIn() {
                     const credentials = jwtDecode(token);
                     await setSession(credentials);
                     alert("Login feito");
-                    router.push('/modulos/trilha')
+                    router.push('/modulos/trilha-demo')
                 } else {
                     alert("Algo de errado não está certo! (erro de email/senha)")
                 }

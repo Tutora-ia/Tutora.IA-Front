@@ -14,7 +14,7 @@ export default function Login() {
                 <ArrowBackButton />
             </div>
             <div className={styles.textTop}>
-                <h1>Que bom te ver<br />aqui novamente</h1>
+                <h1>Que bom te ver<br />aqui novamente!</h1>
                 <h2>Vamos embarcar nessa jornada <br />épica de aprendizado!</h2>
             </div>
 
