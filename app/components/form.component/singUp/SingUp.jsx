@@ -19,7 +19,6 @@ export const SignUp = () => {
 
     const onSubmit = async (data) => {
         try {
-            console.log(JSON.stringify(data, null, 2));
             const response = await fetch("http://localhost:8080/v1/auth/sign-up", {
                 method: "POST",
                 headers: {

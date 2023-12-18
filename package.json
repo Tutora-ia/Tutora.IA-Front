@@ -12,9 +12,12 @@
     "@fortawesome/fontawesome-free": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+<<<<<<< HEAD
     "axios": "^1.6.2",
     "dotenv": "^16.3.1",
     "framer-motion": "^10.16.16",
+=======
+>>>>>>> 71b624fc124eda2980d21b3cb7203dcea4c4ae57
     "iron-session": "^8.0.1",
     "jwt-decode": "^4.0.0",
     "next": "^14.0.3",
@@ -29,7 +32,10 @@
     "validator": "^13.11.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.16",
     "eslint": "^8",
-    "eslint-config-next": "^14.0.3"
+    "eslint-config-next": "^14.0.3",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6"
   }
 }

@@ -28,13 +28,10 @@ export default function SingIn() {
                 body: JSON.stringify(data)
             });
             const serverResponse = await response.json();
-            console.log(serverResponse)
-            console.log(response)
             if (response.ok) {
                 const token = serverResponse.token;
                 if (token) {
                     const credentials = jwtDecode(token);
-                    console.log(credentials);
                     await setSession(credentials);
                     alert("Login feito");
                     router.push('/modulos/trilha')
