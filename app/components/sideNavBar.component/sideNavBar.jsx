@@ -14,22 +14,22 @@ export default function SideNavBar() {
     <div className="sideNavBar">
       <div className="cima">
         <div className="logoContainer">
-            <Image
-              src={Logo}
-              alt="Logo Tutora.IA"
-              fill={true}
-              className="logoImage"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
+          <Image
+            src={Logo}
+            alt="Logo Tutora.IA"
 
+            width={120}
+     
+            className="logoImage"
+          />
         </div>
         <div className="navIcon">
-          <Link className="Links" href="/modulos/trilha">
+          <Link className="Links" href="/modulos">
             <Image
               src={Trilha}
               alt="Icone Trilha"
-              width={70}
-              height={70}
+              width={80}
+
             />
           </Link>
 
@@ -37,8 +37,8 @@ export default function SideNavBar() {
             <Image
               src={Chat}
               alt="Icone Chat"
-              width={65}
-              height={65}
+              width={80}
+
             />
           </Link>
 
@@ -46,26 +46,23 @@ export default function SideNavBar() {
             <Image
               src={Jogos}
               alt="Icone Jogos"
-              width={65}
-              height={65}
+              width={80}
             />
           </Link>
 
-          <Link className="Links" href="/">
+          {/* <Link className="Links" href="/">
             <Image
               src={Missoes}
               alt="Icone Missões"
-              width={65}
-              height={65}
+              width={80}
             />
-          </Link>
+          </Link> */}
 
           <Link className="Links" href="/redacao">
             <Image
               src={Redacao}
               alt="Icone Redacao"
-              width={65}
-              height={65}
+              width={80}
             />
           </Link>
         </div>
@@ -75,8 +72,7 @@ export default function SideNavBar() {
           <Image
             src={Perfil}
             alt="Icone Perfil"
-            width={90}
-            height={90}
+            width={80}
           />
         </Link>
       </div>

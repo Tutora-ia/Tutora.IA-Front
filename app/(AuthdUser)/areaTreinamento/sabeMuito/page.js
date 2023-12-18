@@ -8,25 +8,21 @@ import Background from '@/app/components/purpleBackgroundAuthdUser/purpleBackgro
 
 export default function Home() {
   return (
-    <Background
-
-      content={
-        <main className={styles.mainHome}>
-          <ArrowBackButton />
-          <div className={styles.ContainerHome}>
-            <img className={styles.logoMain} src='/SabeMuito/LogoBranca.svg'></img>
-            <h1 className={`${styles.tituloHome}`}>Sabe Muito</h1>
-            <div className={styles.circle}></div>
-            <Link href='/areaTreinamento/sabeMuito/sabeMuito'>
-              <button className={`${styles.btnHome}`}>
-                Jogar
-              </button>
-            </Link>
-          </div>
-          <Image className={styles.aurora} src={aurora} width={300} height={300} />
-        </main>
-      }
-
-    />
+    <Background>
+      <main className={styles.mainHome}>
+        <div className={styles.arrow}><ArrowBackButton /></div>
+        <div className={styles.ContainerHome}>
+          <img className={styles.logoMain} src='/SabeMuito/LogoBranca.svg'></img>
+          <h1 className={`${styles.tituloHome}`}>Sabe Muito</h1>
+          <div className={styles.circle}></div>
+          <Link href='/areaTreinamento/sabeMuito/sabeMuito'>
+            <button className={`${styles.btnHome}`}>
+              Jogar
+            </button>
+          </Link>
+        </div>
+        <Image className={styles.aurora} src={aurora} width={300} height={300} />
+      </main>
+    </Background>
   )
 }

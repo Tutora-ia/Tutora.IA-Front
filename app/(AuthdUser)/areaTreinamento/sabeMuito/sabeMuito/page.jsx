@@ -65,63 +65,62 @@ const Page = () => {
     }
 
     return (
-        <Background
+        <Background>
 
-            content={
-
-                <main className={styles.main}>
+            <main className={styles.main}>
+                <div className={styles.arrow} >
                     <ArrowBackButton />
+                </div>
 
-                    <div className={styles.Container}>
-                        <div>
-                            {!showResult ? (
-                                <div>
-                                    <div className={styles.quizContainer}>
-                                        <h2>Pergunta: {questionsActive + 1}
-                                            <span>/{questions.length}</span>
-                                        </h2>
-                                        <h3 className={exo.className}>{questions[questionsActive].question}</h3>
-                                    </div>
-                                    <div className={styles.containerAwsners}>
-                                        {answers.map((answers, idx) => (
-                                            <li key={idx}
-                                                onClick={() => onAnswerSelected(answers, idx)}
-                                                className={selectAnswersIndex === idx ? styles.liSelected : styles.liHover}>
-                                                <span className={poppins.className}>{answers}</span>
-                                            </li>
-                                        ))}
-                                    </div>
-                                    <div className={styles.planeButton}>
-                                        {check ? (
-                                            <button onClick={nextQuestion} className={`${styles.btn}`}>
-                                                {questionsActive === question.length - 1 ? <IoPaperPlane /> : <IoPaperPlane />}
-                                            </button>
-                                        ) : (
-                                            <button onClick={nextQuestion} disabled className={`${styles.btn}`}>
-                                                {questionsActive === question.length - 1 ? <IoPaperPlane /> : <IoPaperPlane />}
-                                            </button>
-                                        )}
-                                    </div>
-
+                <div className={styles.Container}>
+                    <div>
+                        {!showResult ? (
+                            <div>
+                                <div className={styles.quizContainer}>
+                                    <h2>Pergunta: {questionsActive + 1}
+                                        <span>/{questions.length}</span>
+                                    </h2>
+                                    <h3 className={exo.className}>{questions[questionsActive].question}</h3>
+                                </div>
+                                <div className={styles.containerAwsners}>
+                                    {answers.map((answers, idx) => (
+                                        <li key={idx}
+                                            onClick={() => onAnswerSelected(answers, idx)}
+                                            className={selectAnswersIndex === idx ? styles.liSelected : styles.liHover}>
+                                            <span className={poppins.className}>{answers}</span>
+                                        </li>
+                                    ))}
+                                </div>
+                                <div className={styles.planeButton}>
+                                    {check ? (
+                                        <button onClick={nextQuestion} className={`${styles.btn}`}>
+                                            {questionsActive === question.length - 1 ? <IoPaperPlane /> : <IoPaperPlane />}
+                                        </button>
+                                    ) : (
+                                        <button onClick={nextQuestion} disabled className={`${styles.btn}`}>
+                                            {questionsActive === question.length - 1 ? <IoPaperPlane /> : <IoPaperPlane />}
+                                        </button>
+                                    )}
                                 </div>
 
-                            ) : (
-                                <div className={styles.quizResult}>
-                                    <h3>Aqui está seu desempenho!</h3>
-                                    <p>XP: {(result.score / 25) * 100}</p>
-                                    <p>Pontuação: {(result.score / 25) * 50}</p>
-                                    <p>Total de Perguntas corretas: {result.correctAnswers}<span>/{questions.length}</span></p>
-                                    <p>Total de Perguntas erradas: {result.wrongAnswers}<span>/{questions.length}</span></p>
-                                    <button onClick={() => window.location.reload()}><p>Reiniciar</p></button>
-                                </div>
-                            )}
-                        </div>
+                            </div>
+
+                        ) : (
+                            <div className={styles.quizResult}>
+                                <h3>Aqui está seu desempenho!</h3>
+                                <p>XP: {(result.score / 25) * 100}</p>
+                                <p>Pontuação: {(result.score / 25) * 50}</p>
+                                <p>Total de Perguntas corretas: {result.correctAnswers}<span>/{questions.length}</span></p>
+                                <p>Total de Perguntas erradas: {result.wrongAnswers}<span>/{questions.length}</span></p>
+                                <button onClick={() => window.location.reload()}><p>Reiniciar</p></button>
+                            </div>
+                        )}
                     </div>
-                </main>
+                </div>
+            </main>
 
-            }
 
-        />
+        </Background>
 
     );
 }

@@ -10,10 +10,9 @@ export default function TitleAuthdUser({ children }) {
     <header className='header'>
       <ArrowBackButton />
       <section className='titleBox'>
-
         {children}
       </section>
-      <Menu className='menuBtn'/>
+      <Menu className='menuBtn' />
     </header>
   )
 }

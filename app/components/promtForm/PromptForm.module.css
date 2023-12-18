@@ -4,6 +4,7 @@
     border-radius: 1rem;
     overflow: hidden;
     background-color: #111118;
+    height: 100%;
     
 }
 
@@ -14,7 +15,7 @@
     display: block;
     border: none;
     background: none;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
 }
 
 .input:focus {
@@ -22,10 +23,19 @@
 }
 
 .btnSubmit{
+    display: flex;
+    align-items: center;
+    justify-content: end;
     min-width: 10%;
     font-size: 1.8rem;
-    padding: 10px;
+    padding-right: 2rem;
     border: none;
     background: none;
     cursor: pointer;
+}
+
+@media screen and (max-width:650px) {
+    .input{
+        font-size: 1rem;
+    }
 }

@@ -66,13 +66,16 @@ export default function Home() {
   return (
     <PurpleBackground>
 
-      <main className={styles.main}>
+
+   
+
+      
 
         {/* TOP SECTION */}
         <section className={styles.topSection}>
 
           <TitleAuthdUser>
-            <h2 className={styles.titleh2}>CHAT COM A AURORA</h2>
+          <h2 className={styles.titleh2}>CHAT COM A AURORA</h2>
           </TitleAuthdUser>
         </section>
 
@@ -111,7 +114,7 @@ export default function Home() {
             <img className={styles.aurora} src='/ChatAurora/Aurora.svg'></img>
           </section>
         </section>
-      </main>
+
     </PurpleBackground>
   )
 }
