@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&family=Poppins:wght@300;400;700&display=swap');
 
-.contentContainer{
-    background: #241f43;
+.contentContainer {
     border-radius: 15px;
     position: fixed;
     display: flex;
@@ -11,32 +10,31 @@
     overflow: hidden;
 }
 
-.containerEsquerda{
-    width: 100%;
-    height: 97%;
+.containerEsquerda {
+    width: 85%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     align-items: center;
     justify-content: space-between;
     padding: 30px 30px 0 30px;
 }
 
-.tipoRedacao{
+.tipoRedacao {
     background: #d9d9d9;
     text-align: center;
     width: 98%;
     border-radius: 10px;
 }
 
-.tipoRedacao h1{
+.tipoRedacao h1 {
     color: #000;
     font-weight: 700;
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
 }
 
-.textoRedacao{
+.textoRedacao {
     background: #d9d9d9;
     height: 85%;
     width: 98%;
@@ -49,7 +47,7 @@
     align-items: center;
 }
 
-.textoRedacao .titulo{
+.textoRedacao .titulo {
     border: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -67,12 +65,12 @@
     overflow: hidden;
 }
 
-.textoRedacao textarea:focus{
+.textoRedacao textarea:focus {
     border: none;
     outline: none;
 }
 
-.textoRedacao .redacao{
+.textoRedacao .redacao {
     padding: 0 80px;
     border: none;
     font-family: 'Poppins', sans-serif;
@@ -89,77 +87,18 @@
     overflow: hidden;
 }
 
-.ContainerDireita {
+.containerDireita {
+    background-color: #130827;
+    width: 18%;
+    height: 90%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    align-self: center;
     align-items: center;
-    background: #130827;
-    z-index: 10;
-    margin-left: 20px;
-    width: 20%;
-    height: 100%;
-    gap: 30px;
-}
-.selecionaveis {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.tempo {
-    margin-left: 10px;
-    text-align: center;
-    background: #4b2395;
-    width: 220px;
-    border-radius: 10px;
-}
-
-.tempo h3 {
-    font-weight: 400;
-    font-size: 27px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.tempo p {
-    font-weight: 400;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.instrucoes {
-    margin-left: 10px;
-    height: 50px;
-    text-align: center;
-    background: #4b2395;
-    width: 220px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tema {
-    margin-left: 10px;
-    height: 50px;
-    text-align: center;
-    background: #4b2395;
-    width: 220px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.ContainerDireita button {
-margin-top: 300px;
-
-    outline: none;
-    border: none;
-    font-size: 18px;
-    background: #4b2395;
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 700;
-    width: 200px;
-    height: 40px;
-    border-radius: 8px;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 40px;
 }

@@ -1,10 +1,40 @@
+'use client'
+
 import PurpleBackground from "@/app/components/purpleBackgroundAuthdUser/purpleBackground";
 import styles from "./page.module.css"
 import Link from "next/link";
-import Image from "next/image";
-import ProgressBar from "@/app/components/progressBar.component/ProgressBar";
-
+import { LiaBrailleSolid, LiaAngleDownSolid, LiaCheckCircleSolid } from "react-icons/lia";
+import { Dropdown, DropdownTrigger, DropdownMenu, DropdownSection, DropdownItem, Button, cn, Spacer } from "@nextui-org/react";
+import { useForm } from "react-hook-form";
 export default function Perfil() {
+    const {
+        register,
+        handleSubmit,
+    } = useForm();
+
+    const onSubmit = async (data) => {
+        try {
+            const response = await fetch("https://api.languagetool.org/v2/check", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "accept": "application/json"
+                },
+                body: JSON.stringify(data)
+            });
+            const serverResponse = await response.json();
+            if (response.ok) {
+                const token = serverResponse.token;
+                if (token) {
+                } else {
+                }
+            } else {
+            }
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
     return (
         <PurpleBackground>
             <div className={styles.contentContainer}>
@@ -13,33 +43,57 @@ export default function Perfil() {
                         <h1>DESAFIO ENEM</h1>
                     </div>
                     <div className={styles.textoRedacao}>
-                        <textarea className={styles.titulo} value="Normas de linguagem e liberdade" placeholder="insira o seu titulo" />
-                        <textarea className={styles.redacao} value='O mercado de trabalho acaba excluindo e anulando o diferente, o preconceito linguístico ainda é uma pauta pouco abordada no meio corporativo. Normalmente as pessoas costumam escrever e falar do jeito que escutam, a variação linguística é influenciada por regiões e classe social. O regionalismo traz o vício de linguagem, expressões ou construções linguísticas que vão contra às normas gramaticais, que na hora de se expressar não vibializa a concordância, regência e colocação o que determina a fala como inconrreta, a pronúncia é diversa, mas compreenssivel e mesmo asssim quando recitada é tratada com desdem.
-A fala é diferente em cada região e, mesmo assim, existe uma norma para o que é considerado "correto" na fala e escrita. Cada ambiente requer uma forma diferente de se expressar, sendo comum utilizar linguagens mais simples que se aproximem da linguagem falada em sua totalidade. Em músicas e poemas, há a chamada "licença poética", que concede liberdade ao escritor para ignorar as normas cultas e desvios da norma ortográfica, permitindo o uso de termos que se aproximam mais da linguagem falada. Isso dá total liberdade ao escritor para manipular as palavras de modo a torná-las compreensíveis da maneira pretendida a expressão.
-Deve-se discutir mais sobre preconceito linguístico, as grandes mídias também dão pouco espaço a esse tipo de assunto, a falta de visibiladade faz com que ainda seja ignorada. Assim como todo preconceito, o linguístico é prejudicial, principalmente, quando o assunto é mercado de trabalho. Aceitar que a linguagem não é imutável e esquecer o padrão quando se trata de relacionamento com pessoas é importante para que estimulem das variedades linguísticas de forma que simplifique que apesar de existir a norma culta, existem variações linguistica.' />
+                        <textarea className={styles.titulo} placeholder="insira o seu titulo" />
+                        <textarea
+                            className={styles.redacao}
+                            placeholder="Sua redação:"
+                            {...register("text", { required: true })}
+                        />
                     </div>
                 </div>
-                <div className={styles.ContainerDireita}>
-                    <ProgressBar />
-                    <div className={styles.selecionaveis}>
+                <Spacer x={1} />
+                <div className={styles.containerDireita}>
+                    <Dropdown>
+                        <DropdownTrigger>
+                            <Button className="flex bg-purple-700 w-full h-16 gap-5 rounded-md text-lg" startContent={<LiaBrailleSolid />} endContent={<LiaAngleDownSolid />}>
+                                Opções
+                            </Button>
+                        </DropdownTrigger>
+                        <DropdownMenu className="w-48 h-16" variant="faded" aria-label="Opções de redação">
+                            <DropdownSection className="flex flex-col">
+                                <DropdownItem
+                                    className="rounded-md bg-pink-500 my-1 text-xs font-thin p-2"
+                                    key="Instruções"
+                                    description="ver instruções sobre o tema da redação"
+                                >
+                                    <p className="text-base font-medium" > Instruções </p>
+                                </DropdownItem>
+                                <DropdownItem
+                                    className="rounded-md bg-pink-500 my-1 text-xs font-thin p-2"
+                                    key="tema"
+                                    description="ver tema da redação"
+                                >
+                                    <p className="text-base font-medium" > tema </p>
+                                </DropdownItem>
+                                <DropdownItem
+                                    className="rounded-md bg-pink-500 my-1 text-xs font-thin p-2"
+                                    key="desempenho"
+                                    description="ver seu desempenho"
+                                >
+                                    <p className="text-base font-medium">Instruções</p>
 
-                        <div className={styles.tempo}>
-                            <p>tempo Restante</p>
-                            <h3>90min 00s</h3>
-                        </div>
-                        <div className={styles.instrucoes}>
-                            <p>Instruções</p>
-                        </div>
-                        <div className={styles.tema}>
-                            <p>tema</p>
-                        </div>
+                                </DropdownItem>
+                            </DropdownSection>
+                        </DropdownMenu>
+                    </Dropdown>
 
-                    </div>
-
-                    <button>CORRIGIR</button>
+                    <Button onClick={() => handleSubmit(onSubmit)()} className="flex bg-purple-700 w-full h-16 gap-5 rounded-md text-xl" startContent={<LiaCheckCircleSolid />}>
+                        Corrigir
+                    </Button>
                 </div>
+
             </div>
-        </PurpleBackground>
+        </PurpleBackground >
     )
 }
 
