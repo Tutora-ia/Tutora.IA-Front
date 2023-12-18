@@ -1,7 +1,6 @@
 import PurpleBackground from '@/app/components/purpleBackgroundAuthdUser/purpleBackground.jsx'
 import styles from './page.module.css'
 import RedacaoFeita from '@/app/components/redacoesFeitas.component/redacaoFeita'
-import Link from 'next/link'
 import ModalRedacao from '@/app/components/modals.components/modalRedacao'
 
 
