@@ -11,7 +11,7 @@ export default function Home() {
       </TitleAuthdUser>
 
       <div className={styles.carrosselContainer} >
-        <Link href={'/areaTreinamento/sabeMuito'}>
+        <Link className={styles.games}href={'/areaTreinamento/sabeMuito'}>
           <img className={styles.games} src='/AreaTreinamento/SabeMuito.png'/>
         </Link>
         <img className={styles.games} src='/AreaTreinamento/5Erros.png'>

@@ -66,11 +66,6 @@ export default function Home() {
   return (
     <PurpleBackground>
 
-
-   
-
-      
-
         {/* TOP SECTION */}
         <section className={styles.topSection}>
 

@@ -6,7 +6,7 @@ import { jwtDecode } from 'jwt-decode'
 import { useForm } from "react-hook-form";
 import { isEmail } from "validator";
 import { useRouter } from 'next/navigation'
-import { setSession } from '@/services/authentication/cookie-session.js'
+
 
 export default function SingIn() {
 

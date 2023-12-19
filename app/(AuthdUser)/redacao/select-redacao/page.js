@@ -64,9 +64,6 @@ export default function SelectRedacao() {
             <CardHeader>
               <h1>Tema gerado pela nossa IA Aurora:</h1>
             </CardHeader>
-            <CardBody>
-              <h3 className="text-2xl">Local de extrair tema</h3>
-            </CardBody>
           </Card>
         </Tab>
 
