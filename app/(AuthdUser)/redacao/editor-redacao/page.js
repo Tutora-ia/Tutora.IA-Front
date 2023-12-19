@@ -59,29 +59,28 @@ export default function Perfil() {
                                 Opções
                             </Button>
                         </DropdownTrigger>
-                        <DropdownMenu className="w-48 h-16" variant="faded" aria-label="Opções de redação">
+                        <DropdownMenu variant="faded" aria-label="Opções de redação">
                             <DropdownSection className="flex flex-col">
                                 <DropdownItem
-                                    className="rounded-md bg-pink-500 my-1 text-xs font-thin p-2"
+                                    className="rounded-md text-xs font-thin p-2 text-black"
                                     key="Instruções"
                                     description="ver instruções sobre o tema da redação"
                                 >
-                                    <p className="text-base font-medium" > Instruções </p>
+                                    <p className="text-base font-medium text-black" > Instruções </p>
                                 </DropdownItem>
                                 <DropdownItem
-                                    className="rounded-md bg-pink-500 my-1 text-xs font-thin p-2"
+                                    className="rounded-md my-1 text-xs font-thin p-2"
                                     key="tema"
                                     description="ver tema da redação"
                                 >
-                                    <p className="text-base font-medium" > tema </p>
+                                    <p className="text-base font-medium text-black" > tema </p>
                                 </DropdownItem>
                                 <DropdownItem
-                                    className="rounded-md bg-pink-500 my-1 text-xs font-thin p-2"
+                                    className="rounded-md my-1 text-xs font-thin p-2"
                                     key="desempenho"
                                     description="ver seu desempenho"
                                 >
-                                    <p className="text-base font-medium">Instruções</p>
-
+                                    <p className="text-base font-medium text-black">Instruções</p>
                                 </DropdownItem>
                             </DropdownSection>
                         </DropdownMenu>
